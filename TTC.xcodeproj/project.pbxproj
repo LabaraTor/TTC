@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		973EE39A652BA3CD695C12C5 /* Pods_TTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2001254E54237B8D4319AC20 /* Pods_TTC.framework */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
 		FDF1CE09209E60AF00956713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE08209E60AF00956713 /* ViewController.swift */; };
 		FDF1CE0C209E60AF00956713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE0A209E60AF00956713 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		FDF1CE14209E60AF00956713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE12209E60AF00956713 /* LaunchScreen.storyboard */; };
 		FDF1CE1F209E60AF00956713 /* TTCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE1E209E60AF00956713 /* TTCTests.swift */; };
 		FDF1CE2A209E60AF00956713 /* TTCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE29209E60AF00956713 /* TTCUITests.swift */; };
+		FDF1CE38209E624000956713 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE37209E624000956713 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2001254E54237B8D4319AC20 /* Pods_TTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BC7C4E950E9B390D6B4ACD /* Pods-TTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTC/Pods-TTC.debug.xcconfig"; sourceTree = "<group>"; };
+		3700C67C4488F220D584CF17 /* Pods-TTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTC/Pods-TTC.release.xcconfig"; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF1CE06209E60AF00956713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF1CE08209E60AF00956713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		FDF1CE25209E60AF00956713 /* TTCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF1CE29209E60AF00956713 /* TTCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCUITests.swift; sourceTree = "<group>"; };
 		FDF1CE2B209E60AF00956713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF1CE37209E624000956713 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973EE39A652BA3CD695C12C5 /* Pods_TTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8C11BBDAB98E7DC19621D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22BC7C4E950E9B390D6B4ACD /* Pods-TTC.debug.xcconfig */,
+				3700C67C4488F220D584CF17 /* Pods-TTC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B795DCBBA2131E8BFFDF54CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2001254E54237B8D4319AC20 /* Pods_TTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDF1CDFA209E60AF00956713 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				FDF1CE1D209E60AF00956713 /* TTCTests */,
 				FDF1CE28209E60AF00956713 /* TTCUITests */,
 				FDF1CE04209E60AF00956713 /* Products */,
+				0F8C11BBDAB98E7DC19621D9 /* Pods */,
+				B795DCBBA2131E8BFFDF54CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +131,7 @@
 				FDF1CE10209E60AF00956713 /* Assets.xcassets */,
 				FDF1CE12209E60AF00956713 /* LaunchScreen.storyboard */,
 				FDF1CE15209E60AF00956713 /* Info.plist */,
+				FDF1CE37209E624000956713 /* GoogleService-Info.plist */,
 				FDF1CE0D209E60AF00956713 /* TTC.xcdatamodeld */,
 			);
 			path = TTC;
@@ -135,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDF1CE2E209E60AF00956713 /* Build configuration list for PBXNativeTarget "TTC" */;
 			buildPhases = (
+				BE1027F5CB74C8851C235CD2 /* [CP] Check Pods Manifest.lock */,
 				FDF1CDFF209E60AF00956713 /* Sources */,
 				FDF1CE00209E60AF00956713 /* Frameworks */,
 				FDF1CE01209E60AF00956713 /* Resources */,
+				76CA7D57873D98830675F3AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF1CE14209E60AF00956713 /* LaunchScreen.storyboard in Resources */,
+				FDF1CE38209E624000956713 /* GoogleService-Info.plist in Resources */,
 				FDF1CE11209E60AF00956713 /* Assets.xcassets in Resources */,
 				FDF1CE0C209E60AF00956713 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +286,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76CA7D57873D98830675F3AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TTC/Pods-TTC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTC/Pods-TTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1027F5CB74C8851C235CD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDF1CDFF209E60AF00956713 /* Sources */ = {
@@ -428,6 +501,7 @@
 		};
 		FDF1CE2F209E60AF00956713 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22BC7C4E950E9B390D6B4ACD /* Pods-TTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +517,7 @@
 		};
 		FDF1CE30209E60AF00956713 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3700C67C4488F220D584CF17 /* Pods-TTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
