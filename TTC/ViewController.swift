@@ -10,7 +10,7 @@ import UIKit
 import SkyFloatingLabelTextField
 
 class ViewController: UIViewController {
-
+//tets
     @IBOutlet weak var LogTF: SkyFloatingLabelTextField!
     @IBOutlet weak var PasTF: SkyFloatingLabelTextField!
     
