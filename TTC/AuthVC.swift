@@ -28,8 +28,9 @@ class AuthVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            let alert = UIAlertController(title: "Sign In", message: "Success", preferredStyle: UIAlertControllerStyle.alert)
-            self.present(alert, animated: true, completion: nil)
+            if user != nil {
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 
