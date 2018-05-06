@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AuthVC-->
+        <!--Authentification-->
         <scene sceneID="Llo-dV-gfj">
             <objects>
                 <viewController id="kOl-yn-e3Z" customClass="AuthVC" customModule="TTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,7 +82,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YLU-1J-qwr"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wOC-hj-ywB"/>
+                    <navigationItem key="navigationItem" title="Authentification" id="wOC-hj-ywB"/>
                     <connections>
                         <outlet property="LogTF" destination="6B9-3B-kfO" id="82q-vE-nRb"/>
                         <outlet property="PasTF" destination="4eR-Ul-vBm" id="jux-HL-aVC"/>
@@ -92,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="372" y="32.833583208395808"/>
         </scene>
-        <!--RegVC-->
+        <!--Registration-->
         <scene sceneID="B1e-Ic-EdD">
             <objects>
                 <viewController id="yWj-Al-Xy0" customClass="RegVC" customModule="TTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,6 +204,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="9mT-rc-paa"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Registration" id="Tet-eZ-Myg"/>
                     <connections>
                         <outlet property="EmailTF" destination="w8F-0K-URa" id="lbf-RZ-Ggd"/>
                         <outlet property="NickTF" destination="jrE-oP-bqi" id="1yz-EY-0x2"/>
@@ -293,9 +294,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4tX-bw-YAV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GeN-sp-7Eq">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="GeN-sp-7Eq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

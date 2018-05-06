@@ -11,6 +11,7 @@ import SkyFloatingLabelTextField
 import FirebaseAuth
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
 
 class RegVC: UIViewController {
 
@@ -23,6 +24,8 @@ class RegVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         NickTF.placeholder = "Enter nickname"
         NickTF.title = "Nickname"
@@ -52,7 +55,8 @@ class RegVC: UIViewController {
                 return
             }
             
-            let storageRef = Storage.storage().reference().child("ProfImages")
+            let imageName = NSUUID().uuidString
+            let storageRef = Storage.storage().reference().child("\(imageName)")
 
             if let uploadData = UIImagePNGRepresentation(self.ProfileIMG.image!){
                 storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
@@ -64,7 +68,7 @@ class RegVC: UIViewController {
                         if error != nil{
                             self.present(Lib.showError(error: error!), animated: true, completion: nil)
                         }
-                        let values = ["Nickname":self.NickTF.text!, "ProfileImgURL": url] as [String : AnyObject]
+                        let values = ["Nickname":self.NickTF.text!, "ProfileImgURL": url?.absoluteString] as [String : AnyObject]
                         self.RegUser(uid: uid, values: values)
                     })
                 })
@@ -80,7 +84,7 @@ class RegVC: UIViewController {
                 self.present(Lib.showError(error: error!), animated: true, completion: nil)
             }
             
-//            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
     }
     

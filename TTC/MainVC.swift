@@ -16,7 +16,7 @@ class MainVC: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser == nil{
             self.performSegue(withIdentifier: "SignOut", sender: self)
         }
