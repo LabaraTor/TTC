@@ -13,7 +13,7 @@ import Firebase
 import FirebaseDatabase
 import FirebaseStorage
 
-class RegVC: UIViewController {
+class RegVC: UIViewController{
 
     @IBOutlet weak var ProfileIMG: UIImageView!
     
@@ -25,6 +25,8 @@ class RegVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ProfileIMG.layer.cornerRadius = ProfileIMG.frame.height/2
+        ProfileIMG.clipsToBounds = true
         
         
         NickTF.placeholder = "Enter nickname"
@@ -42,7 +44,6 @@ class RegVC: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
     
     @IBAction func RegTap(_ sender: Any) {
@@ -87,13 +88,25 @@ class RegVC: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
     }
+}
+
+extension RegVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @IBAction func AddPhoto(_ sender: Any) {
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        present(picker, animated: true, completion: nil)
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+            ProfileIMG.image = editedImage
+        } else if let originalImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            ProfileIMG.image = originalImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
