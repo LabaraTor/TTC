@@ -47,10 +47,7 @@ class AuthVC: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
             if let error = error {
-                let alert = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: UIAlertControllerStyle.alert)
-                let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
+                self.present(Lib.showError(error: error), animated: true, completion: nil)
             }
         }
     }
