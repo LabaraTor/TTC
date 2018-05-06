@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		973EE39A652BA3CD695C12C5 /* Pods_TTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2001254E54237B8D4319AC20 /* Pods_TTC.framework */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
-		FDF1CE09209E60AF00956713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE08209E60AF00956713 /* ViewController.swift */; };
+		FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE08209E60AF00956713 /* AuthVC.swift */; };
 		FDF1CE0C209E60AF00956713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE0A209E60AF00956713 /* Main.storyboard */; };
 		FDF1CE0F209E60AF00956713 /* TTC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE0D209E60AF00956713 /* TTC.xcdatamodeld */; };
 		FDF1CE11209E60AF00956713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE10209E60AF00956713 /* Assets.xcassets */; };
@@ -42,7 +42,7 @@
 		3700C67C4488F220D584CF17 /* Pods-TTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTC/Pods-TTC.release.xcconfig"; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF1CE06209E60AF00956713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDF1CE08209E60AF00956713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDF1CE08209E60AF00956713 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		FDF1CE0B209E60AF00956713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDF1CE0E209E60AF00956713 /* TTC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTC.xcdatamodel; sourceTree = "<group>"; };
 		FDF1CE10209E60AF00956713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FDF1CE06209E60AF00956713 /* AppDelegate.swift */,
-				FDF1CE08209E60AF00956713 /* ViewController.swift */,
+				FDF1CE08209E60AF00956713 /* AuthVC.swift */,
 				FDF1CE0A209E60AF00956713 /* Main.storyboard */,
 				FDF1CE10209E60AF00956713 /* Assets.xcassets */,
 				FDF1CE12209E60AF00956713 /* LaunchScreen.storyboard */,
@@ -295,12 +295,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TTC/Pods-TTC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -336,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF1CE0F209E60AF00956713 /* TTC.xcdatamodeld in Sources */,
-				FDF1CE09209E60AF00956713 /* ViewController.swift in Sources */,
+				FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */,
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
