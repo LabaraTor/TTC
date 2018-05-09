@@ -10,5 +10,6 @@ target 'TTC' do
   pod 'Firebase/Storage'
 
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'JTAppleCalendar', '~> 7.0'
 
 end
