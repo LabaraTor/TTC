@@ -10,6 +10,7 @@
 		973EE39A652BA3CD695C12C5 /* Pods_TTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2001254E54237B8D4319AC20 /* Pods_TTC.framework */; };
 		FD125D7D209F735F00A84D8F /* RegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD125D7C209F735F00A84D8F /* RegVC.swift */; };
 		FD125D7F209FA14900A84D8F /* Lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD125D7E209FA14900A84D8F /* Lib.swift */; };
+		FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */; };
 		FDC20009209F1AD200967E0C /* AccTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC20008209F1AD200967E0C /* AccTBC.swift */; };
 		FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2000A209F1FA700967E0C /* MainVC.swift */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		3700C67C4488F220D584CF17 /* Pods-TTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTC/Pods-TTC.release.xcconfig"; sourceTree = "<group>"; };
 		FD125D7C209F735F00A84D8F /* RegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegVC.swift; sourceTree = "<group>"; };
 		FD125D7E209FA14900A84D8F /* Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lib.swift; sourceTree = "<group>"; };
+		FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalVC.swift; sourceTree = "<group>"; };
 		FDC20008209F1AD200967E0C /* AccTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccTBC.swift; sourceTree = "<group>"; };
 		FDC2000A209F1FA700967E0C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				FDC2000A209F1FA700967E0C /* MainVC.swift */,
 				FD125D7C209F735F00A84D8F /* RegVC.swift */,
 				FD125D7E209FA14900A84D8F /* Lib.swift */,
+				FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */,
 			);
 			path = TTC;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
 				FDC20009209F1AD200967E0C /* AccTBC.swift in Sources */,
 				FD125D7D209F735F00A84D8F /* RegVC.swift in Sources */,
+				FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,9 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class MainVC: UIViewController {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+
+    @IBOutlet var tableView: UITableView!
 
     @IBOutlet weak var Nickname: UILabel!
     @IBOutlet weak var ProfileImage: UIImageView!
@@ -20,6 +22,13 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -66,5 +75,24 @@ class MainVC: UIViewController {
         self.performSegue(withIdentifier: "SignOut", sender: self)
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // create a new cell if needed or reuse an old one
+        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell!
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "SelCal", sender: self)
+    }
     
 }
