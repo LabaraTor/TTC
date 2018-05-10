@@ -42,7 +42,7 @@ extension CalVC: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource{
         formatter.locale = Calendar.current.locale
         
         let startTime = formatter.date(from: "2018 01 01")!
-        let endTime = formatter.date(from: "2018 12 31")!
+        let endTime = formatter.date(from: "2019 12 31")!
         
         let parameters = ConfigurationParameters(startDate: startTime, endDate: endTime)
         return parameters
