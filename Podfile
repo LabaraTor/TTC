@@ -11,5 +11,6 @@ target 'TTC' do
 
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'FSCalendar'
+  pod 'TextFieldEffects'
 
 end

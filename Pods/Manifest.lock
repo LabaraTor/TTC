@@ -51,6 +51,7 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - SkyFloatingLabelTextField (3.4.1)
+  - TextFieldEffects (1.4.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -59,6 +60,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FSCalendar
   - SkyFloatingLabelTextField (~> 3.0)
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -75,6 +77,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - SkyFloatingLabelTextField
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
@@ -90,7 +93,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SkyFloatingLabelTextField: 8085f20f57f74a00cfcae58099299faa1a971035
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: 67ee8c168b9f217741be35771e7b16a65abc115c
+PODFILE CHECKSUM: 55e0db7816ad3aaae5631fe191baaaa6ef72af89
 
 COCOAPODS: 1.5.0
