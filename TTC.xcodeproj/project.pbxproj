@@ -11,6 +11,7 @@
 		FD125D7D209F735F00A84D8F /* RegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD125D7C209F735F00A84D8F /* RegVC.swift */; };
 		FD125D7F209FA14900A84D8F /* Lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD125D7E209FA14900A84D8F /* Lib.swift */; };
 		FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */; };
+		FD7BB2A720A5B72E007F1C99 /* AddCalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */; };
 		FDC20009209F1AD200967E0C /* AccTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC20008209F1AD200967E0C /* AccTBC.swift */; };
 		FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2000A209F1FA700967E0C /* MainVC.swift */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		FD125D7C209F735F00A84D8F /* RegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegVC.swift; sourceTree = "<group>"; };
 		FD125D7E209FA14900A84D8F /* Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lib.swift; sourceTree = "<group>"; };
 		FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalVC.swift; sourceTree = "<group>"; };
+		FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalVC.swift; sourceTree = "<group>"; };
 		FDC20008209F1AD200967E0C /* AccTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccTBC.swift; sourceTree = "<group>"; };
 		FDC2000A209F1FA700967E0C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 			children = (
 				FDF1CE06209E60AF00956713 /* AppDelegate.swift */,
 				FDF1CE0A209E60AF00956713 /* Main.storyboard */,
+				FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */,
 				FDF1CE10209E60AF00956713 /* Assets.xcassets */,
 				FDF1CE12209E60AF00956713 /* LaunchScreen.storyboard */,
 				FDF1CE15209E60AF00956713 /* Info.plist */,
@@ -362,6 +365,7 @@
 				FD125D7F209FA14900A84D8F /* Lib.swift in Sources */,
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
 				FDC20009209F1AD200967E0C /* AccTBC.swift in Sources */,
+				FD7BB2A720A5B72E007F1C99 /* AddCalVC.swift in Sources */,
 				FD125D7D209F735F00A84D8F /* RegVC.swift in Sources */,
 				FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */,
 			);
