@@ -8,6 +8,8 @@
 
 import UIKit
 import TextFieldEffects
+import FirebaseDatabase
+import FirebaseAuth
 
 class AddCalVC: UIViewController {
 
@@ -82,12 +84,23 @@ class AddCalVC: UIViewController {
     }
     
     @IBAction func Add(_ sender: Any) {
-        let newCal = TTCalendar(name: calName.text!, startDate: startField.text!, endDate: endField.text!, close: true);
-        Lib.addCal(newCal: newCal)
-        print(Lib.calList[0].name)
-        print(Lib.calList[0].startDate)
-        print(Lib.calList[0].endDate)
+        let newCal = TTCalendar(name: calName.text!, startDate: startField.text!, endDate: endField.text!, close: "true");
+        addCal(newCal: newCal)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    public func addCal(newCal: TTCalendar){
+        let values = ["name":newCal.name, "startDate":newCal.startDate, "endDate":newCal.endDate, "close":"true"] as [String : AnyObject]
+        let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
+        let calsReference = ref.child("calendars").child((Auth.auth().currentUser?.uid)!).child(newCal.name!)
+        calsReference.updateChildValues(values) { (error, ref) in
+            if error != nil{
+                self.present(Lib.showError(error: error!), animated: true, completion: nil)
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+        Lib.calList.append(newCal)
+    }
+
     
 }

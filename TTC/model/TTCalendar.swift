@@ -8,19 +8,19 @@
 
 import Foundation
 
-class TTCalendar{
+class TTCalendar: NSObject{
     
-    var name = String()
-    var startDate = String()
-    var endDate = String()
-    var close = Bool()
+    var name: String?
+    var startDate: String?
+    var endDate: String?
+    var close: String?
     
-    init(name: String, startDate: String, endDate: String, close: Bool) {
+    init(name: String, startDate: String, endDate: String, close: String) {
         self.name = name
         self.startDate = startDate
         self.endDate = endDate
         self.close = close
     }
-    init(){}
+    override init(){}
     
 }

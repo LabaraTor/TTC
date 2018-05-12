@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
@@ -29,6 +30,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        fetchCalendars()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -71,8 +74,18 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         self.performSegue(withIdentifier: "SignOut", sender: self)
     }
     
-    @IBAction func cancel(_ sender: Any) {
-        self.performSegue(withIdentifier: "SignOut", sender: self)
+    func fetchCalendars(){
+        Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).observe(.childAdded) { (snapshot) in
+            print(snapshot)
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                print(dictionary)
+                let name = dictionary["name"] as? String
+                let startDate = dictionary["startDate"] as? String
+                let endDate = dictionary["endDate"] as? String
+                let close = dictionary["close"] as? String
+                let calendar = TTCalendar(name: name!, startDate: startDate!, endDate: endDate!, close: close!)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

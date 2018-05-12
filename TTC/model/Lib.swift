@@ -9,15 +9,12 @@
 import Foundation
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 
 class Lib {
     
     static var calList: Array<TTCalendar> = Array()
-    
-    public static func addCal(newCal: TTCalendar){
-        calList.append(newCal)
-    }
     
     public static func showError(error: Error) -> UIAlertController
     {

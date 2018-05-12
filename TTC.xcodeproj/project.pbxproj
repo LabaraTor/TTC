@@ -116,6 +116,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD7BB2AC20A751CE007F1C99 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FD125D7E209FA14900A84D8F /* Lib.swift */,
+				FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FD7BB2AD20A751F4007F1C99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDF1CE08209E60AF00956713 /* AuthVC.swift */,
+				FDC20008209F1AD200967E0C /* AccTBC.swift */,
+				FDC2000A209F1FA700967E0C /* MainVC.swift */,
+				FD125D7C209F735F00A84D8F /* RegVC.swift */,
+				FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */,
+				FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FDF1CDFA209E60AF00956713 = {
 			isa = PBXGroup;
 			children = (
@@ -141,21 +163,15 @@
 		FDF1CE05209E60AF00956713 /* TTC */ = {
 			isa = PBXGroup;
 			children = (
+				FD7BB2AD20A751F4007F1C99 /* Controller */,
+				FD7BB2AC20A751CE007F1C99 /* model */,
 				FDF1CE06209E60AF00956713 /* AppDelegate.swift */,
-				FD125D7E209FA14900A84D8F /* Lib.swift */,
-				FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */,
 				FDF1CE0A209E60AF00956713 /* Main.storyboard */,
 				FDF1CE10209E60AF00956713 /* Assets.xcassets */,
 				FDF1CE12209E60AF00956713 /* LaunchScreen.storyboard */,
 				FDF1CE15209E60AF00956713 /* Info.plist */,
 				FDF1CE37209E624000956713 /* GoogleService-Info.plist */,
 				FDF1CE0D209E60AF00956713 /* TTC.xcdatamodeld */,
-				FDF1CE08209E60AF00956713 /* AuthVC.swift */,
-				FDC20008209F1AD200967E0C /* AccTBC.swift */,
-				FDC2000A209F1FA700967E0C /* MainVC.swift */,
-				FD125D7C209F735F00A84D8F /* RegVC.swift */,
-				FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */,
-				FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */,
 				FD7BB2AA20A6140E007F1C99 /* CallTableCell.swift */,
 			);
 			path = TTC;
