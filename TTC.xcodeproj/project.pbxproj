@@ -14,7 +14,9 @@
 		FD7BB2A720A5B72E007F1C99 /* AddCalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */; };
 		FD7BB2A920A605A4007F1C99 /* TTCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */; };
 		FD7BB2AB20A6140E007F1C99 /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2AA20A6140E007F1C99 /* CallTableCell.swift */; };
-		FDC20009209F1AD200967E0C /* AccTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC20008209F1AD200967E0C /* AccTBC.swift */; };
+		FD7BB2B020A89305007F1C99 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2AF20A89305007F1C99 /* EventTableCell.swift */; };
+		FD7BB2B420A8A04E007F1C99 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2B320A8A04E007F1C99 /* AddEventVC.swift */; };
+		FD7BB2B620A8B19D007F1C99 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2B520A8B19D007F1C99 /* Event.swift */; };
 		FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2000A209F1FA700967E0C /* MainVC.swift */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
 		FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE08209E60AF00956713 /* AuthVC.swift */; };
@@ -54,7 +56,9 @@
 		FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalVC.swift; sourceTree = "<group>"; };
 		FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCalendar.swift; sourceTree = "<group>"; };
 		FD7BB2AA20A6140E007F1C99 /* CallTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
-		FDC20008209F1AD200967E0C /* AccTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccTBC.swift; sourceTree = "<group>"; };
+		FD7BB2AF20A89305007F1C99 /* EventTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
+		FD7BB2B320A8A04E007F1C99 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		FD7BB2B520A8B19D007F1C99 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FDC2000A209F1FA700967E0C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF1CE06209E60AF00956713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			children = (
 				FD125D7E209FA14900A84D8F /* Lib.swift */,
 				FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */,
+				FD7BB2B520A8B19D007F1C99 /* Event.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -129,11 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				FDF1CE08209E60AF00956713 /* AuthVC.swift */,
-				FDC20008209F1AD200967E0C /* AccTBC.swift */,
-				FDC2000A209F1FA700967E0C /* MainVC.swift */,
 				FD125D7C209F735F00A84D8F /* RegVC.swift */,
+				FDC2000A209F1FA700967E0C /* MainVC.swift */,
 				FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */,
-				FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,8 +145,18 @@
 			isa = PBXGroup;
 			children = (
 				FD7BB2AA20A6140E007F1C99 /* CallTableCell.swift */,
+				FD7BB2AF20A89305007F1C99 /* EventTableCell.swift */,
 			);
 			path = elements;
+			sourceTree = "<group>";
+		};
+		FD7BB2B220A89D31007F1C99 /* popup */ = {
+			isa = PBXGroup;
+			children = (
+				FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */,
+				FD7BB2B320A8A04E007F1C99 /* AddEventVC.swift */,
+			);
+			path = popup;
 			sourceTree = "<group>";
 		};
 		FDF1CDFA209E60AF00956713 = {
@@ -171,6 +184,7 @@
 		FDF1CE05209E60AF00956713 /* TTC */ = {
 			isa = PBXGroup;
 			children = (
+				FD7BB2B220A89D31007F1C99 /* popup */,
 				FD7BB2AE20A7926A007F1C99 /* elements */,
 				FD7BB2AD20A751F4007F1C99 /* Controller */,
 				FD7BB2AC20A751CE007F1C99 /* model */,
@@ -392,16 +406,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF1CE0F209E60AF00956713 /* TTC.xcdatamodeld in Sources */,
+				FD7BB2B020A89305007F1C99 /* EventTableCell.swift in Sources */,
 				FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */,
 				FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */,
 				FD7BB2AB20A6140E007F1C99 /* CallTableCell.swift in Sources */,
 				FD125D7F209FA14900A84D8F /* Lib.swift in Sources */,
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
 				FD7BB2A920A605A4007F1C99 /* TTCalendar.swift in Sources */,
-				FDC20009209F1AD200967E0C /* AccTBC.swift in Sources */,
 				FD7BB2A720A5B72E007F1C99 /* AddCalVC.swift in Sources */,
 				FD125D7D209F735F00A84D8F /* RegVC.swift in Sources */,
 				FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */,
+				FD7BB2B420A8A04E007F1C99 /* AddEventVC.swift in Sources */,
+				FD7BB2B620A8B19D007F1C99 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

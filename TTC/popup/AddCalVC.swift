@@ -41,6 +41,7 @@ class AddCalVC: UIViewController {
         
         // format picker for date
         picker.datePickerMode = .date
+        picker.locale = Locale(identifier: "en")
     }
     
     @objc func SDonePressed() {
@@ -67,6 +68,7 @@ class AddCalVC: UIViewController {
         
         // format picker for date
         picker.datePickerMode = .date
+        picker.locale = Locale(identifier: "en")
     }
     
     @objc func EDonePressed() {
@@ -85,19 +87,19 @@ class AddCalVC: UIViewController {
     }
     
     @IBAction func Add(_ sender: Any) {
-        let newCal = TTCalendar(name: calName.text!, startDate: startField.text!, endDate: endField.text!, close: "true");
-        addCal(newCal: newCal)
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    public func addCal(newCal: TTCalendar){
         var close: String
         if switcher.isOn{
             close =  "true"
         } else {
             close = "false"
         }
-        let values = ["name":newCal.name, "startDate":newCal.startDate, "endDate":newCal.endDate, "close":close] as [String : AnyObject]
+        let newCal = TTCalendar(name: calName.text!, startDate: startField.text!, endDate: endField.text!, close: close);
+        addCal(newCal: newCal)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    public func addCal(newCal: TTCalendar){
+        let values = ["name":newCal.name, "startDate":newCal.startDate, "endDate":newCal.endDate, "close":newCal.close] as [String : AnyObject]
         let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
         let calsReference = ref.child("calendars").child((Auth.auth().currentUser?.uid)!).child(newCal.name!)
         calsReference.updateChildValues(values) { (error, ref) in
@@ -106,7 +108,6 @@ class AddCalVC: UIViewController {
             }
             self.dismiss(animated: true, completion: nil)
         }
-//        TTCalendar.list.append(newCal)
     }
 
     

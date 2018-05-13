@@ -9,7 +9,7 @@
 import UIKit
 import FSCalendar
 
-class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
+class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -31,6 +31,8 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = curCal?.name
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -55,5 +57,19 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     
     func minimumDate(for calendar: FSCalendar) -> Date {
         return self.formatter.date(from: curCal.startDate!)!
+    }
+    
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int{
+        return Event.list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:EventTableCell = self.tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventTableCell!
+        cell.eventTitle.text = Event.list[indexPath.row].title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }
