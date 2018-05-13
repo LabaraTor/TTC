@@ -121,7 +121,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SelCal") {
-            let CalVC = segue.destination as! CalVC;
+//            let CalVC = segue.destination as! CalVC;
             CalVC.curCal = TTCalendar.list[(self.tableView.indexPathForSelectedRow?.row)!]
         }
     }

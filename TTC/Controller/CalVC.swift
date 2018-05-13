@@ -8,6 +8,8 @@
 
 import UIKit
 import FSCalendar
+import Firebase
+import FirebaseDatabase
 
 class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var calendar: FSCalendar!
@@ -15,27 +17,50 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     
     @IBOutlet weak var calView: FSCalendar!
     
-    var curCal: TTCalendar!
+    static var curCal: TTCalendar!
+    static var selectedDate: Date!
     
     private let formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.locale = Locale(identifier: "en_US")
-//        formatter.dateFormat = "yyyy MM dd"
         return formatter
     }()
     
-    var a:TimeInterval = 0.0
+    fileprivate let formatter1: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = curCal?.name
+        self.navigationItem.title = CalVC.curCal?.name
         tableView.delegate = self
         tableView.dataSource = self
+        CalVC.selectedDate = calendar.today
+        fetchEvents()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func fetchEvents(){
+        Event.list = []
+        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observe(.childAdded) { (snapshot) in
+            print(snapshot)
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                let event = Event()
+                event.title = dictionary["title"] as? String
+                event.descr = dictionary["description"] as? String
+                event.startTime = dictionary["startTime"] as? String
+                event.endTime = dictionary["endTime"] as? String
+                Event.list.append(event)
+            }
+            self.tableView.reloadData()
+        }
+        self.tableView.reloadData()
     }
 
     @IBAction func toggleClicked(sender: AnyObject) {
@@ -51,12 +76,17 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
         self.view.layoutIfNeeded()
     }
     
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        CalVC.selectedDate = date
+        fetchEvents()
+    }
+    
     func maximumDate(for calendar: FSCalendar) -> Date {
-        return self.formatter.date(from: curCal.endDate!)!
+        return self.formatter.date(from: CalVC.curCal.endDate!)!
     }
     
     func minimumDate(for calendar: FSCalendar) -> Date {
-        return self.formatter.date(from: curCal.startDate!)!
+        return self.formatter.date(from: CalVC.curCal.startDate!)!
     }
     
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int{
