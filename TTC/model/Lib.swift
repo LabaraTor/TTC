@@ -14,8 +14,6 @@ import FirebaseDatabase
 
 class Lib {
     
-    static var calList: Array<TTCalendar> = Array()
-    
     public static func showError(error: Error) -> UIAlertController
     {
         let alert = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: UIAlertControllerStyle.alert)

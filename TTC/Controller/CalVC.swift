@@ -11,8 +11,12 @@ import FSCalendar
 
 class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     @IBOutlet weak var calendar: FSCalendar!
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var calView: FSCalendar!
+    
+    var curCal: TTCalendar?
+    
     private let formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy MM dd"
@@ -24,13 +28,10 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = curCal?.name
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func toggleClicked(sender: AnyObject) {
@@ -42,6 +43,7 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     }
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
         self.calView.fs_height = bounds.height
+        self.tableView.fs_height += 500
         self.view.layoutIfNeeded()
     }
     

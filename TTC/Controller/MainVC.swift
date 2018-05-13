@@ -30,8 +30,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        fetchCalendars()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,6 +43,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                     self.setProfileImage(profileImageUrl: dictionary["ProfileImgURL"] as! String)
                 }
             }, withCancel: nil)
+            fetchCalendars()
         }
     }
     
@@ -75,27 +74,39 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func fetchCalendars(){
+        TTCalendar.list = []
         Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).observe(.childAdded) { (snapshot) in
             print(snapshot)
             if let dictionary = snapshot.value as? [String: AnyObject]{
-                print(dictionary)
-                let name = dictionary["name"] as? String
-                let startDate = dictionary["startDate"] as? String
-                let endDate = dictionary["endDate"] as? String
-                let close = dictionary["close"] as? String
-                let calendar = TTCalendar(name: name!, startDate: startDate!, endDate: endDate!, close: close!)
+                let calendar = TTCalendar()
+                calendar.name = dictionary["name"] as? String
+                calendar.startDate = dictionary["startDate"] as? String
+                calendar.endDate = dictionary["endDate"] as? String
+                calendar.close = dictionary["close"] as? String
+                TTCalendar.list.append(calendar)
             }
+            self.tableView.reloadData()
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return TTCalendar.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // create a new cell if needed or reuse an old one
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! CallTableCell!
+        let cell:CallTableCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! CallTableCell!
+        
+        let curCal = TTCalendar.list[indexPath.row]
+        cell.name.text = curCal.name
+        cell.startDate.text = curCal.startDate
+        cell.endDate.text = curCal.endDate
+        if curCal.close == "true"{
+            cell.close.backgroundColor = UIColor.red
+        } else {
+            cell.close.backgroundColor = UIColor.green
+        }
         
         return cell
     }
@@ -108,4 +119,24 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         self.performSegue(withIdentifier: "SelCal", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "SelCal") {
+            let CalVC = segue.destination as! CalVC;
+            CalVC.curCal = TTCalendar.list[(self.tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).child(TTCalendar.list[indexPath.row].name!).setValue(nil)
+            TTCalendar.list.remove(at: indexPath.row)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        }
+    }
 }

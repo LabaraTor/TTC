@@ -16,6 +16,7 @@ class AddCalVC: UIViewController {
     @IBOutlet weak var calName: HoshiTextField!
     @IBOutlet weak var startField: UITextField!
     @IBOutlet weak var endField: UITextField!
+    @IBOutlet weak var switcher: UISwitch!
     
     let picker = UIDatePicker()
     
@@ -90,7 +91,13 @@ class AddCalVC: UIViewController {
     }
     
     public func addCal(newCal: TTCalendar){
-        let values = ["name":newCal.name, "startDate":newCal.startDate, "endDate":newCal.endDate, "close":"true"] as [String : AnyObject]
+        var close: String
+        if switcher.isOn{
+            close =  "true"
+        } else {
+            close = "false"
+        }
+        let values = ["name":newCal.name, "startDate":newCal.startDate, "endDate":newCal.endDate, "close":close] as [String : AnyObject]
         let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
         let calsReference = ref.child("calendars").child((Auth.auth().currentUser?.uid)!).child(newCal.name!)
         calsReference.updateChildValues(values) { (error, ref) in
@@ -99,7 +106,7 @@ class AddCalVC: UIViewController {
             }
             self.dismiss(animated: true, completion: nil)
         }
-        Lib.calList.append(newCal)
+//        TTCalendar.list.append(newCal)
     }
 
     
