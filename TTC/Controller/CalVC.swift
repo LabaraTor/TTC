@@ -15,11 +15,13 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     
     @IBOutlet weak var calView: FSCalendar!
     
-    var curCal: TTCalendar?
+    var curCal: TTCalendar!
     
     private let formatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy MM dd"
+        formatter.dateStyle = .medium
+        formatter.locale = Locale(identifier: "en_US")
+//        formatter.dateFormat = "yyyy MM dd"
         return formatter
     }()
     
@@ -48,11 +50,10 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate {
     }
     
     func maximumDate(for calendar: FSCalendar) -> Date {
-        return self.formatter.date(from: "2018 07 01")!
+        return self.formatter.date(from: curCal.endDate!)!
     }
     
     func minimumDate(for calendar: FSCalendar) -> Date {
-        let date = NSDate(timeIntervalSinceNow: -90*24*60*60)
-        return date as Date
+        return self.formatter.date(from: curCal.startDate!)!
     }
 }
