@@ -49,6 +49,7 @@ class AddCalVC: UIViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "en")
         let dateString = formatter.string(from: picker.date)
         
         startField.text = "\(dateString)"
@@ -76,6 +77,7 @@ class AddCalVC: UIViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "en")
         let dateString = formatter.string(from: picker.date)
         
         endField.text = "\(dateString)"

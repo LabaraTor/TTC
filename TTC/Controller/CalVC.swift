@@ -48,14 +48,18 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     
     func fetchEvents(){
         Event.list = []
-        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observeSingleEvent(of: .value) { (snapshot) in
+        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observeSingleEvent(of: .childAdded) { (snapshot) in
             print(snapshot)
             //сделать словарь в класс
             
             if let dictionary = snapshot.value as? [String: AnyObject]{
+                print(dictionary)
                 let event = Event()
-                event.setValuesForKeys(dictionary)
-                
+//                event.setValuesForKeys(dictionary)
+                event.title = dictionary["title"] as? String
+                event.startTime = dictionary["startTime"] as? String
+                event.endTime = dictionary["endTime"] as? String
+                event.descr = dictionary["descr"] as? String
                 Event.list.append(event)
             }
             self.tableView.reloadData()
