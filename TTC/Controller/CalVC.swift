@@ -48,14 +48,14 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     
     func fetchEvents(){
         Event.list = []
-        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observe(.childAdded) { (snapshot) in
+        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observeSingleEvent(of: .value) { (snapshot) in
             print(snapshot)
+            //сделать словарь в класс
+            
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let event = Event()
-                event.title = dictionary["title"] as? String
-                event.descr = dictionary["description"] as? String
-                event.startTime = dictionary["startTime"] as? String
-                event.endTime = dictionary["endTime"] as? String
+                event.setValuesForKeys(dictionary)
+                
                 Event.list.append(event)
             }
             self.tableView.reloadData()
@@ -96,10 +96,22 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:EventTableCell = self.tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventTableCell!
         cell.eventTitle.text = Event.list[indexPath.row].title
+        cell.startTime.text = Event.list[indexPath.row].startTime
+        cell.endTime.text = Event.list[indexPath.row].endTime
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).child(Event.list[indexPath.row].title!).setValue(nil)
+            Event.list.remove(at: indexPath.row)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        }
     }
 }

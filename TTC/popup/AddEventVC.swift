@@ -20,6 +20,8 @@ class AddEventVC: UIViewController {
     
     @IBOutlet weak var addPeople: UIButton!
     
+    let picker = UIDatePicker()
+    
     fileprivate let formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -28,6 +30,8 @@ class AddEventVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createDatePicker()
+        createDatePicker1()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +48,7 @@ class AddEventVC: UIViewController {
     }
     
     public func addEvent(newEvent: Event){
-        let values = ["title":newEvent.title, "description":newEvent.descr, "startTime":newEvent.startTime, "endTime":newEvent.endTime] as [String : AnyObject]
+        let values = ["title":newEvent.title, "descr":newEvent.descr, "startTime":newEvent.startTime, "endTime":newEvent.endTime] as [String : AnyObject]
         let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
         let calsReference = ref.child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter.string(from: CalVC.selectedDate)).child(newEvent.title!)
         calsReference.updateChildValues(values) { (error, ref) in
@@ -53,5 +57,57 @@ class AddEventVC: UIViewController {
             }
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    func createDatePicker() {        // toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        // done button for toolbar
+        let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(SDonePressed))
+        toolbar.setItems([done], animated: false)
+        
+        startTimeTF.inputAccessoryView = toolbar
+        startTimeTF.inputView = picker
+        
+        // format picker for date
+        picker.datePickerMode = .time
+        picker.locale = Locale(identifier: "en")
+    }
+    
+    @objc func SDonePressed() {
+        // format date
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        let dateString = formatter.string(from: picker.date)
+        
+        startTimeTF.text = "\(dateString)"
+        self.view.endEditing(true)
+    }
+    
+    func createDatePicker1() {        // toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        // done button for toolbar
+        let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(EDonePressed))
+        toolbar.setItems([done], animated: false)
+        
+        endTimeTF.inputAccessoryView = toolbar
+        endTimeTF.inputView = picker
+        
+        // format picker for date
+        picker.datePickerMode = .time
+        picker.locale = Locale(identifier: "en")
+    }
+    
+    @objc func EDonePressed() {
+        // format date
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        let dateString = formatter.string(from: picker.date)
+        
+        endTimeTF.text = "\(dateString)"
+        self.view.endEditing(true)
     }
 }

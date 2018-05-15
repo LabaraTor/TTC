@@ -18,6 +18,9 @@
 		FD7BB2B420A8A04E007F1C99 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2B320A8A04E007F1C99 /* AddEventVC.swift */; };
 		FD7BB2B620A8B19D007F1C99 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2B520A8B19D007F1C99 /* Event.swift */; };
 		FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2000A209F1FA700967E0C /* MainVC.swift */; };
+		FDDFE7FE20AA05740020DBB9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE7FD20AA05740020DBB9 /* SearchVC.swift */; };
+		FDDFE80020AA06710020DBB9 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE7FF20AA06710020DBB9 /* SearchTableCell.swift */; };
+		FDDFE80220AA1B810020DBB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE80120AA1B810020DBB9 /* User.swift */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
 		FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE08209E60AF00956713 /* AuthVC.swift */; };
 		FDF1CE0C209E60AF00956713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE0A209E60AF00956713 /* Main.storyboard */; };
@@ -60,6 +63,9 @@
 		FD7BB2B320A8A04E007F1C99 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 		FD7BB2B520A8B19D007F1C99 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FDC2000A209F1FA700967E0C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FDDFE7FD20AA05740020DBB9 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		FDDFE7FF20AA06710020DBB9 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		FDDFE80120AA1B810020DBB9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF1CE06209E60AF00956713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF1CE08209E60AF00956713 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				FD125D7E209FA14900A84D8F /* Lib.swift */,
 				FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */,
 				FD7BB2B520A8B19D007F1C99 /* Event.swift */,
+				FDDFE80120AA1B810020DBB9 /* User.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 				FD125D7C209F735F00A84D8F /* RegVC.swift */,
 				FDC2000A209F1FA700967E0C /* MainVC.swift */,
 				FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */,
+				FDDFE7FD20AA05740020DBB9 /* SearchVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 			children = (
 				FD7BB2AA20A6140E007F1C99 /* CallTableCell.swift */,
 				FD7BB2AF20A89305007F1C99 /* EventTableCell.swift */,
+				FDDFE7FF20AA06710020DBB9 /* SearchTableCell.swift */,
 			);
 			path = elements;
 			sourceTree = "<group>";
@@ -407,10 +416,13 @@
 			files = (
 				FDF1CE0F209E60AF00956713 /* TTC.xcdatamodeld in Sources */,
 				FD7BB2B020A89305007F1C99 /* EventTableCell.swift in Sources */,
+				FDDFE80020AA06710020DBB9 /* SearchTableCell.swift in Sources */,
 				FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */,
+				FDDFE80220AA1B810020DBB9 /* User.swift in Sources */,
 				FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */,
 				FD7BB2AB20A6140E007F1C99 /* CallTableCell.swift in Sources */,
 				FD125D7F209FA14900A84D8F /* Lib.swift in Sources */,
+				FDDFE7FE20AA05740020DBB9 /* SearchVC.swift in Sources */,
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
 				FD7BB2A920A605A4007F1C99 /* TTCalendar.swift in Sources */,
 				FD7BB2A720A5B72E007F1C99 /* AddCalVC.swift in Sources */,
