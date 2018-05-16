@@ -10,8 +10,6 @@ import Foundation
 
 class TTCalendar: NSObject{
     
-    static var list: Array<TTCalendar> = Array()
-    
     var name: String?
     var startDate: String?
     var endDate: String?

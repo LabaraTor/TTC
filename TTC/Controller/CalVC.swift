@@ -20,6 +20,8 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     static var curCal: TTCalendar!
     static var selectedDate: Date!
     
+    var list: Array<Event> = Array()
+    
     private let formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -47,10 +49,9 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     }
     
     func fetchEvents(){
-        Event.list = []
-        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observeSingleEvent(of: .childAdded) { (snapshot) in
+        list = []
+        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).observe(.childAdded) { (snapshot) in
             print(snapshot)
-            //сделать словарь в класс
             
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 print(dictionary)
@@ -60,7 +61,7 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
                 event.startTime = dictionary["startTime"] as? String
                 event.endTime = dictionary["endTime"] as? String
                 event.descr = dictionary["descr"] as? String
-                Event.list.append(event)
+                self.list.append(event)
             }
             self.tableView.reloadData()
         }
@@ -94,14 +95,14 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     }
     
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int{
-        return Event.list.count
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:EventTableCell = self.tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventTableCell!
-        cell.eventTitle.text = Event.list[indexPath.row].title
-        cell.startTime.text = Event.list[indexPath.row].startTime
-        cell.endTime.text = Event.list[indexPath.row].endTime
+        cell.eventTitle.text = list[indexPath.row].title
+        cell.startTime.text = list[indexPath.row].startTime
+        cell.endTime.text = list[indexPath.row].endTime
         return cell
     }
     
@@ -111,8 +112,8 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
-            Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).child(Event.list[indexPath.row].title!).setValue(nil)
-            Event.list.remove(at: indexPath.row)
+            Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(CalVC.curCal.name!).child(self.formatter1.string(from: CalVC.selectedDate)).child(list[indexPath.row].title!).setValue(nil)
+            list.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()

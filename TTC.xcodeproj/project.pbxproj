@@ -21,6 +21,7 @@
 		FDDFE7FE20AA05740020DBB9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE7FD20AA05740020DBB9 /* SearchVC.swift */; };
 		FDDFE80020AA06710020DBB9 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE7FF20AA06710020DBB9 /* SearchTableCell.swift */; };
 		FDDFE80220AA1B810020DBB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE80120AA1B810020DBB9 /* User.swift */; };
+		FDDFE80520AC68F00020DBB9 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE80420AC68EF0020DBB9 /* Extentions.swift */; };
 		FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE06209E60AF00956713 /* AppDelegate.swift */; };
 		FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF1CE08209E60AF00956713 /* AuthVC.swift */; };
 		FDF1CE0C209E60AF00956713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF1CE0A209E60AF00956713 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		FDDFE7FD20AA05740020DBB9 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		FDDFE7FF20AA06710020DBB9 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
 		FDDFE80120AA1B810020DBB9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FDDFE80420AC68EF0020DBB9 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		FDF1CE03209E60AF00956713 /* TTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF1CE06209E60AF00956713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF1CE08209E60AF00956713 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
@@ -168,6 +170,14 @@
 			path = popup;
 			sourceTree = "<group>";
 		};
+		FDDFE80320AC68970020DBB9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE80420AC68EF0020DBB9 /* Extentions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FDF1CDFA209E60AF00956713 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 		FDF1CE05209E60AF00956713 /* TTC */ = {
 			isa = PBXGroup;
 			children = (
+				FDDFE80320AC68970020DBB9 /* Helpers */,
 				FD7BB2B220A89D31007F1C99 /* popup */,
 				FD7BB2AE20A7926A007F1C99 /* elements */,
 				FD7BB2AD20A751F4007F1C99 /* Controller */,
@@ -422,6 +433,7 @@
 				FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */,
 				FD7BB2AB20A6140E007F1C99 /* CallTableCell.swift in Sources */,
 				FD125D7F209FA14900A84D8F /* Lib.swift in Sources */,
+				FDDFE80520AC68F00020DBB9 /* Extentions.swift in Sources */,
 				FDDFE7FE20AA05740020DBB9 /* SearchVC.swift in Sources */,
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
 				FD7BB2A920A605A4007F1C99 /* TTCalendar.swift in Sources */,

@@ -10,8 +10,6 @@ import Foundation
 
 class Event: NSObject{
     
-    static var list: Array<Event> = Array()
-    
     var title: String?
     var descr: String?
     var startTime: String?

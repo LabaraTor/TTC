@@ -58,8 +58,8 @@ class RegVC: UIViewController{
             
             let imageName = NSUUID().uuidString
             let storageRef = Storage.storage().reference().child("\(imageName)")
-
-            if let uploadData = UIImagePNGRepresentation(self.ProfileIMG.image!){
+            if let profileImage = self.ProfileIMG.image, let uploadData = UIImageJPEGRepresentation(profileImage, 0.1) {
+//            if let uploadData = UIImagePNGRepresentation(self.ProfileIMG.image!){
                 storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
                     if let error = error{
                         self.present(Lib.showError(error: error), animated: true, completion: nil)

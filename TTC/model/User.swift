@@ -10,11 +10,11 @@ import Foundation
 
 class User: NSObject{
     
-    var nickName: String
-    var profileImg: String
-    
-    init(nickName:String, profileImg:String) {
-        self.nickName = nickName
-        self.profileImg = profileImg
-    }
+    var Nickname: String?
+    var ProfileImgURL: String?
+//
+//    init(nickName:String, profileImg:String) {
+//        self.nickName = nickName
+//        self.profileImg = profileImg
+//    }
 }
