@@ -91,7 +91,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                     self.tableView.reloadData()
                 })
             }
-            self.tableView.reloadData()
+//            self.tableView.reloadData()
         }
     }
     

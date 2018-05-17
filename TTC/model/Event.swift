@@ -14,6 +14,8 @@ class Event: NSObject{
     var descr: String?
     var startTime: String?
     var endTime: String?
+    var with: String?
+    
     
     init(title: String, descr: String, startTime: String, endTime: String) {
         self.title = title

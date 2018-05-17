@@ -61,6 +61,9 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
                 event.startTime = dictionary["startTime"] as? String
                 event.endTime = dictionary["endTime"] as? String
                 event.descr = dictionary["descr"] as? String
+                if dictionary["with"] as? String != nil{
+                    event.with = dictionary["with"] as? String
+                }
                 self.list.append(event)
             }
             self.tableView.reloadData()
@@ -100,9 +103,19 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:EventTableCell = self.tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventTableCell!
-        cell.eventTitle.text = list[indexPath.row].title
-        cell.startTime.text = list[indexPath.row].startTime
-        cell.endTime.text = list[indexPath.row].endTime
+        let user = list[indexPath.row]
+        cell.eventTitle.text = user.title
+        cell.startTime.text = user.startTime
+        cell.endTime.text = user.endTime
+
+        if user.with != nil{
+            Database.database().reference().child("users").child(user.with!).observeSingleEvent(of: .value, with: { (snapshot) in
+                let userDict = snapshot.value as! [String: Any]
+                
+                let with = userDict["Nickname"] as! String
+                cell.with.text = "With \(with)"
+            })
+        }
         return cell
     }
     

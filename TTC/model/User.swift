@@ -10,6 +10,7 @@ import Foundation
 
 class User: NSObject{
     
+    var uid: String?
     var Nickname: String?
     var ProfileImgURL: String?
 //

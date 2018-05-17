@@ -1,19 +1,16 @@
 //
-//  EventTableCell.swift
+//  ReqCell.swift
 //  TTC
 //
-//  Created by Торнике Двалашвили on 13.05.18.
+//  Created by Торнике Двалашвили on 17.05.18.
 //  Copyright © 2018 Торнике Двалашвили. All rights reserved.
 //
 
 import UIKit
 
-class EventTableCell: UITableViewCell {
-    
-    @IBOutlet weak var eventTitle: UILabel!
-    @IBOutlet weak var startTime: UILabel!
-    @IBOutlet weak var endTime: UILabel!
-    @IBOutlet weak var with: UILabel!
+class ReqCell: UITableViewCell {
+
+    @IBOutlet weak var title: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +18,7 @@ class EventTableCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
     }
 
 }
