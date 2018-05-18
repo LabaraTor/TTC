@@ -18,6 +18,7 @@
 		FD1DD6E820AED6D300911A9C /* SelCalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DD6E720AED6D300911A9C /* SelCalCell.swift */; };
 		FD1DD6EA20AF55B600911A9C /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DD6E920AF55B600911A9C /* UserVC.swift */; };
 		FD1DD6EC20AF55FA00911A9C /* UserCalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DD6EB20AF55FA00911A9C /* UserCalCell.swift */; };
+		FD1DD6EE20AF809300911A9C /* UserCalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DD6ED20AF809300911A9C /* UserCalVC.swift */; };
 		FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */; };
 		FD7BB2A720A5B72E007F1C99 /* AddCalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */; };
 		FD7BB2A920A605A4007F1C99 /* TTCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */; };
@@ -72,6 +73,7 @@
 		FD1DD6E720AED6D300911A9C /* SelCalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelCalCell.swift; sourceTree = "<group>"; };
 		FD1DD6E920AF55B600911A9C /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		FD1DD6EB20AF55FA00911A9C /* UserCalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalCell.swift; sourceTree = "<group>"; };
+		FD1DD6ED20AF809300911A9C /* UserCalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalVC.swift; sourceTree = "<group>"; };
 		FD7BB2A420A4BD5A007F1C99 /* CalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalVC.swift; sourceTree = "<group>"; };
 		FD7BB2A620A5B72E007F1C99 /* AddCalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalVC.swift; sourceTree = "<group>"; };
 		FD7BB2A820A605A4007F1C99 /* TTCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCalendar.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				FD141AAC20ADB33E003E39F3 /* AddPersonVC.swift */,
 				FD141AAE20AE0AF8003E39F3 /* RequestsVC.swift */,
 				FD1DD6E920AF55B600911A9C /* UserVC.swift */,
+				FD1DD6ED20AF809300911A9C /* UserCalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				FD1DD6E820AED6D300911A9C /* SelCalCell.swift in Sources */,
 				FD7BB2B020A89305007F1C99 /* EventTableCell.swift in Sources */,
 				FDDFE80020AA06710020DBB9 /* SearchTableCell.swift in Sources */,
+				FD1DD6EE20AF809300911A9C /* UserCalVC.swift in Sources */,
 				FD141AAD20ADB33E003E39F3 /* AddPersonVC.swift in Sources */,
 				FD1DD6EA20AF55B600911A9C /* UserVC.swift in Sources */,
 				FDC2000B209F1FA700967E0C /* MainVC.swift in Sources */,

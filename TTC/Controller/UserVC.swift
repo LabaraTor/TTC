@@ -56,8 +56,13 @@ class UserVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UserCalCell = self.tableView.dequeueReusableCell(withIdentifier: "UserCalCell") as! UserCalCell!
-        cell.Nickname.text = list[indexPath.row].name
+        let cell = UITableViewCell()
+        cell.textLabel?.text = list[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UserCalVC.curCal = list[indexPath.row]
+        performSegue(withIdentifier: "UserTableToCal", sender: nil)
     }
 }

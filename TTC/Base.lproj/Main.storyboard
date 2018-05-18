@@ -365,11 +365,47 @@
                     <connections>
                         <outlet property="Nickname" destination="xdE-8o-qPK" id="XkG-pM-puE"/>
                         <outlet property="tableView" destination="5dG-mG-YNU" id="cMX-t3-WDY"/>
+                        <segue destination="Hv8-I5-nJg" kind="show" identifier="UserTableToCal" id="43z-jd-chL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWx-2Z-MEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2455.1999999999998" y="1569.265367316342"/>
+        </scene>
+        <!--User CalVC-->
+        <scene sceneID="7a4-eh-qKb">
+            <objects>
+                <viewController id="Hv8-I5-nJg" customClass="UserCalVC" customModule="TTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j48-uy-fkl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-t2-8TS">
+                                <rect key="frame" x="0.0" y="356" width="375" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWu-BR-Nro" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="j48-uy-fkl" id="jGv-ba-z7X"/>
+                                    <outlet property="delegate" destination="j48-uy-fkl" id="0Y5-4X-li5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="SAD-c0-iex"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="DWu-BR-Nro" id="opP-PV-Vv6"/>
+                        <outlet property="tableView" destination="dmX-t2-8TS" id="Z3y-vb-Nie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPc-O2-hMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656.8000000000002" y="1624.1379310344828"/>
         </scene>
         <!--RequestsVC-->
         <scene sceneID="xAb-EQ-76v">
@@ -909,7 +945,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="calView" destination="SxW-aJ-BDY" id="zJE-4o-ceX"/>
                         <outlet property="calendar" destination="SxW-aJ-BDY" id="Hyu-Qn-BWu"/>
                         <outlet property="tableView" destination="tyE-ih-SYe" id="QcB-gE-T8R"/>
                     </connections>
