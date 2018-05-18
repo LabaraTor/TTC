@@ -16,7 +16,7 @@ class AddPersonVC: UIInputViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var tableView: UITableView!
     
     var list: Array<User> = Array()
-    static var selUser = User()
+    static var selUser: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()

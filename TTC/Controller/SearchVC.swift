@@ -31,6 +31,7 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let user = User()
+                user.uid = snapshot.key
                 user.Nickname = dictionary["Nickname"] as? String
                 user.ProfileImgURL = dictionary["ProfileImgURL"] as? String
                 self.list.append(user)
@@ -56,5 +57,10 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UserVC.user = list[indexPath.row]
+        performSegue(withIdentifier: "searchToUser", sender: nil)
     }
 }

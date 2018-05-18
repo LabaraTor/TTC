@@ -1,22 +1,16 @@
 //
-//  ReqCell.swift
+//  UserCalCell.swift
 //  TTC
 //
-//  Created by Торнике Двалашвили on 17.05.18.
+//  Created by Торнике Двалашвили on 18.05.18.
 //  Copyright © 2018 Торнике Двалашвили. All rights reserved.
 //
 
 import UIKit
 
-class ReqCell: UITableViewCell {
+class UserCalCell: UITableViewCell {
 
-    var ButtonHandler:(()-> Void)!
-    
-    @IBOutlet weak var title: UILabel!
-    
-    @IBAction func add(_ sender: Any) {
-        self.ButtonHandler()
-    }
+    @IBOutlet weak var Nickname: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +18,6 @@ class ReqCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
 
 }

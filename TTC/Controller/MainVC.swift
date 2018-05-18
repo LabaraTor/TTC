@@ -14,7 +14,7 @@ import FirebaseDatabase
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet var tableView: UITableView!
-    var list: Array<TTCalendar> = Array()
+    static var list: Array<TTCalendar> = Array()
 
     @IBOutlet weak var Nickname: UILabel!
     @IBOutlet weak var ProfileImage: UIImageView!
@@ -70,14 +70,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     @IBAction func SignOut(_ sender: Any) {
-        list = Array()
+        MainVC.list = Array()
         tableView.reloadData()
         try! Auth.auth().signOut()
         self.performSegue(withIdentifier: "SignOut", sender: self)
     }
     
     func fetchCalendars(){
-        list = []
+        MainVC.list = []
         Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).observe(.childAdded) { (snapshot) in
             print(snapshot)
             if let dictionary = snapshot.value as? [String: AnyObject]{
@@ -86,7 +86,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 calendar.startDate = dictionary["startDate"] as? String
                 calendar.endDate = dictionary["endDate"] as? String
                 calendar.close = dictionary["close"] as? String
-                self.list.append(calendar)
+                MainVC.list.append(calendar)
                 DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
                 })
@@ -96,7 +96,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.list.count
+        return MainVC.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,7 +104,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         // create a new cell if needed or reuse an old one
         let cell:CallTableCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! CallTableCell!
         
-        let curCal = list[indexPath.row]
+        let curCal = MainVC.list[indexPath.row]
         cell.name.text = curCal.name
         cell.startDate.text = curCal.startDate
         cell.endDate.text = curCal.endDate
@@ -128,7 +128,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SelCal") {
 //            let CalVC = segue.destination as! CalVC;
-            CalVC.curCal = list[(self.tableView.indexPathForSelectedRow?.row)!]
+            CalVC.curCal = MainVC.list[(self.tableView.indexPathForSelectedRow?.row)!]
         }
     }
     
@@ -138,8 +138,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
-            Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).child(list[indexPath.row].name!).setValue(nil)
-            list.remove(at: indexPath.row)
+            Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).child(MainVC.list[indexPath.row].name!).setValue(nil)
+            MainVC.list.remove(at: indexPath.row)
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()

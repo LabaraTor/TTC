@@ -11,6 +11,7 @@ import Foundation
 class InputRequest: NSObject{
     var title: String?
     var descr: String?
+    var date: String?
     var startTime: String?
     var endTime: String?
     var uid: String?

@@ -48,11 +48,11 @@ class AddEventVC: UIViewController {
     }
     
     public func addEvent(newEvent: Event){
-        let values = ["title":newEvent.title, "descr":newEvent.descr, "startTime":newEvent.startTime, "endTime":newEvent.endTime, "with":AddPersonVC.selUser.uid] as [String : AnyObject]
+        let values = ["title":newEvent.title, "descr":newEvent.descr, "startTime":newEvent.startTime, "endTime":newEvent.endTime, "with":AddPersonVC.selUser?.uid] as [String : AnyObject]
         if AddPersonVC.selUser != nil{
-            let valuesReq = ["title":newEvent.title, "descr":newEvent.descr, "startTime":newEvent.startTime, "endTime":newEvent.endTime, "uid":Auth.auth().currentUser?.uid] as [String : AnyObject]
+            let valuesReq = ["title":newEvent.title, "descr":newEvent.descr, "date":self.formatter.string(from: CalVC.selectedDate), "startTime":newEvent.startTime, "endTime":newEvent.endTime, "uid":Auth.auth().currentUser?.uid] as [String : AnyObject]
             let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
-            let reqReference = ref.child("requests").child((AddPersonVC.selUser.uid)!).child("input").child(newEvent.title!)
+            let reqReference = ref.child("requests").child((AddPersonVC.selUser?.uid)!).child("input").child(newEvent.title!)
             reqReference.updateChildValues(valuesReq) { (error, ref) in
                 if error != nil{
                     self.present(Lib.showError(error: error!), animated: true, completion: nil)
