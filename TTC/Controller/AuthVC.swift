@@ -20,6 +20,7 @@ class AuthVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        LogTF.layer.borderColor = UIColor.white.cgColor
     }
 
     override func didReceiveMemoryWarning() {
