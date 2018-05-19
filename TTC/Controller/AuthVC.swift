@@ -8,19 +8,22 @@
 
 import UIKit
 import FirebaseAuth
-import SkyFloatingLabelTextField
 import Firebase
 
 class AuthVC: UIViewController {
 
-    @IBOutlet weak var LogTF: SkyFloatingLabelTextField!
-    @IBOutlet weak var PasTF: SkyFloatingLabelTextField!
+    @IBOutlet weak var LogTF: UITextField!
+    @IBOutlet weak var PasTF: UITextField!
     var handle: AuthStateDidChangeListenerHandle!
+    var mainVC: MainVC!
     
+    @IBOutlet weak var btn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        LogTF.layer.borderColor = UIColor.white.cgColor
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        btn.layer.cornerRadius = btn.frame.height / 2.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +33,7 @@ class AuthVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
+                self.mainVC.viewDidLoad()
                 self.dismiss(animated: true, completion: nil)
             }
         }

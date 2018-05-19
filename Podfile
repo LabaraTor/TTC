@@ -9,7 +9,7 @@ target 'TTC' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
 
-  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'SVProgressHUD'
   pod 'FSCalendar'
   pod 'TextFieldEffects'
 
