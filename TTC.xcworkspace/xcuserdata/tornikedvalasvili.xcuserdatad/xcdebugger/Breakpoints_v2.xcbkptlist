@@ -570,7 +570,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.635142"
+            timestampString = "548531736.881101"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
@@ -586,7 +586,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.63907"
+            timestampString = "548531736.892254"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -602,7 +602,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.645074"
+            timestampString = "548531736.8928339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -650,7 +650,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.648317"
+            timestampString = "548531736.89351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
@@ -666,11 +666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.649918"
+            timestampString = "548531736.893874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "tableView(_:commit:forRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -730,89 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.651448"
+            timestampString = "548531736.894511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "CalVC"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CalVC.calView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.FSCalendar&gt;"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/Controller/CalVC.swift"
-                  timestampString = "547936802.2579679"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "79">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CalVC.calView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.FSCalendar&gt;"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/Controller/CalVC.swift"
-                  timestampString = "547936802.261972"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CalVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TTC.CalVC"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/Controller/CalVC.swift"
-                  timestampString = "547936802.26527"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "361">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CalVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CalVC&gt;"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/Controller/CalVC.swift"
-                  timestampString = "547936802.2687089"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "275">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.663021"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1208,11 +1130,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.6653"
+            timestampString = "548531736.896945"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "fetchEvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1224,7 +1146,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.666393"
+            timestampString = "548531736.898595"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -1302,7 +1224,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.667622"
+            timestampString = "548531736.899088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -1380,7 +1302,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.66877"
+            timestampString = "548531736.899495"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -1396,7 +1318,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.670064"
+            timestampString = "548531736.8998851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
@@ -1412,7 +1334,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.671383"
+            timestampString = "548531736.9003561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "85"
@@ -1428,7 +1350,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.6726429"
+            timestampString = "548531736.900631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -1444,173 +1366,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.675987"
+            timestampString = "548531736.9010839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
             endingLineNumber = "97"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.67849"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.679741"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/popup/AddEventVC.swift"
-            timestampString = "548376039.948651"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "addEvent(newEvent:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/popup/AddEventVC.swift"
-            timestampString = "548376039.948892"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "addEvent(newEvent:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/popup/AddEventVC.swift"
-            timestampString = "548376039.949091"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "addEvent(newEvent:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.AddEventVC.addEvent(newEvent: TTC.Event) -&gt; ()"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/popup/AddEventVC.swift"
-                  timestampString = "548347555.37027"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "4890">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.AddEventVC.addEvent(newEvent: TTC.Event) -&gt; ()"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/popup/AddEventVC.swift"
-                  timestampString = "548347555.374349"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "7472">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/popup/AddEventVC.swift"
-            timestampString = "548376039.949355"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "addEvent(newEvent:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.AddEventVC.addEvent(newEvent: TTC.Event) -&gt; ()"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/popup/AddEventVC.swift"
-                  timestampString = "548348079.957996"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "7424">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;, __ObjC.DatabaseReference) -&gt; () in TTC.AddEventVC.addEvent(newEvent: TTC.Event) -&gt; ()"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/popup/AddEventVC.swift"
-                  timestampString = "548348079.965735"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1716,27 +1478,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.681057"
+            timestampString = "548531736.9019181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "calendar(_:boundingRectWillChange:animated:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.681975"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "calendar(_:didSelect:at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1748,13 +1494,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.6827739"
+            timestampString = "548531736.903239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "calendar(_:didSelect:at:)"
-            landmarkType = "7">
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "CalVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1764,13 +1510,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.683555"
+            timestampString = "548531736.9048719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "maximumDate(for:)"
-            landmarkType = "7">
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "CalVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1780,13 +1526,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548506283.6843441"
+            timestampString = "548531736.9064209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "minimumDate(for:)"
-            landmarkType = "7">
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "CalVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2099,7 +1845,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.685725"
+            timestampString = "548531736.91388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -2115,7 +1861,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.687026"
+            timestampString = "548531736.914404"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
@@ -2131,7 +1877,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.688645"
+            timestampString = "548531736.914851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
@@ -2147,11 +1893,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.690185"
+            timestampString = "548531736.917923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2163,11 +1909,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.691313"
+            timestampString = "548531736.918349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2179,7 +1925,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.692507"
+            timestampString = "548531736.9187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -2227,7 +1973,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.6938"
+            timestampString = "548531736.919085"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -2275,7 +2021,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.694965"
+            timestampString = "548531736.9195631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
@@ -2291,7 +2037,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.6959209"
+            timestampString = "548531736.919991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -2339,7 +2085,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.696856"
+            timestampString = "548531736.920403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -2387,7 +2133,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.70249"
+            timestampString = "548531736.920799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -2403,7 +2149,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.7035249"
+            timestampString = "548531736.9211611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -2419,7 +2165,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.7042511"
+            timestampString = "548531736.921522"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -2435,7 +2181,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.705171"
+            timestampString = "548531736.921888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -2483,13 +2229,561 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548506283.7059619"
+            timestampString = "548531736.922279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "setProfileImage(profileImageUrl:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/CalVC.swift"
+            timestampString = "548531736.9226789"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CalVC.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/Controller/CalVC.swift"
+                  timestampString = "548518295.749681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CalVC.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/Controller/CalVC.swift"
+                  timestampString = "548518295.756896"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "1202">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/CalVC.swift"
+            timestampString = "548531736.923625"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.677937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.name.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548518295.80419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.name.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548518295.8098201"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548518295.815352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548518295.821589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.684315"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.endDate.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.928877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.endDate.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.933629"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.938181"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "367">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.9425679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "274">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.685027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.startDate.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.955767"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.startDate.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.960183"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.963987"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "242">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.969023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "165">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.685732"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.descr.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.981926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.descr.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.986457"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.9909869"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517975.99526"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "386">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.686341"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.locked.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517987.56832"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.locked.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517987.572992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517987.5768501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "617">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517987.582339"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "507">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.686938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548517856.6875221"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.locked.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517976.009239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.locked.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517976.013597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517976.018232"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "617">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
+                  timestampString = "548517976.023227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "507">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

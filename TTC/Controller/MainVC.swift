@@ -137,7 +137,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SelCal") {
-            CalVC.curCal = list[(self.tableView.indexPathForSelectedRow?.row)!]
+            let calVC = segue.destination as! CalVC
+            calVC.curCal = list[(self.tableView.indexPathForSelectedRow?.row)!]
         }
         if (segue.identifier == "SIgnOutFromMain"){
             let navAuthVC = segue.destination as! NavAuthVC
