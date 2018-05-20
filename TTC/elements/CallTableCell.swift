@@ -13,7 +13,9 @@ class CallTableCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var startDate: UILabel!
     @IBOutlet weak var endDate: UILabel!
-    @IBOutlet weak var close: UIView!
+    @IBOutlet weak var descr: UILabel!
+    
+    @IBOutlet weak var locked: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

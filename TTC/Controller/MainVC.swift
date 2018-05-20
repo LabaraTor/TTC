@@ -17,16 +17,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var Nickname: UILabel!
     @IBOutlet weak var ProfileImage: UIImageView!
-    @IBOutlet weak var logOutBTN: UIButton!
     
     let imageCache = NSCache<AnyObject, AnyObject>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ProfileImage.layer.masksToBounds = false
         ProfileImage.layer.cornerRadius = ProfileImage.frame.size.width / 2
-        logOutBTN.layer.cornerRadius = logOutBTN.frame.size.height / 2
         ProfileImage.clipsToBounds = true
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -43,8 +40,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         SVProgressHUD.setDefaultMaskType(.black)
         SVProgressHUD.show()
         if Auth.auth().currentUser == nil{
-            self.performSegue(withIdentifier: "SIgnOutFromMain", sender: self)
             SVProgressHUD.dismiss()
+            self.performSegue(withIdentifier: "SIgnOutFromMain", sender: self)
         }else{
             let uid = Auth.auth().currentUser?.uid
             Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -69,6 +66,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 if let image = UIImage(data: data!){
                     self.imageCache.setObject(image, forKey: url as AnyObject)
                     self.ProfileImage.image = image
+                    SVProgressHUD.dismiss()
                 }
             }
         }.resume()
@@ -85,18 +83,22 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func fetchCalendars(){
         list = []
+        Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).observeSingleEvent(of: .value) { (snapshot) in
+            if (snapshot.value! as? [String: AnyObject] == nil) {
+                self.tableView.reloadData()
+            }
+        }
         Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).observe(.childAdded) { (snapshot) in
-            print(snapshot)
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let calendar = TTCalendar()
                 calendar.name = dictionary["name"] as? String
                 calendar.startDate = dictionary["startDate"] as? String
                 calendar.endDate = dictionary["endDate"] as? String
                 calendar.close = dictionary["close"] as? String
+                calendar.descr = dictionary["descr"] as? String
                 self.list.append(calendar)
                 DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
-                    SVProgressHUD.dismiss()
                 })
             }
         }
@@ -114,11 +116,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         cell.name.text = curCal.name
         cell.startDate.text = curCal.startDate
         cell.endDate.text = curCal.endDate
-//        if curCal.close == "true"{
-//            cell.close.backgroundColor = UIColor.red
-//        } else {
-//            cell.close.backgroundColor = UIColor.green
-//        }
+        cell.descr.text = curCal.descr ?? "Some info"
+        if curCal.close == "true"{
+            cell.locked.image = UIImage(named: "locked")!
+        } else {
+            cell.locked.image = UIImage(named: "unlocked")!
+        }
         
         return cell
     }
@@ -141,7 +144,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             let authVC = navAuthVC.viewControllers.first as! AuthVC
             authVC.mainVC = self
         }
-        
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

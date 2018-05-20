@@ -12,6 +12,8 @@
 		FD078F9420B09AA400501BA2 /* CalTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD078F9320B09AA400501BA2 /* CalTableCellView.swift */; };
 		FD078F9820B0AAA800501BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD078F9720B0AAA700501BA2 /* Assets.xcassets */; };
 		FD078F9A20B0C30600501BA2 /* NavAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD078F9920B0C30600501BA2 /* NavAuthVC.swift */; };
+		FD078F9C20B0E9B500501BA2 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD078F9B20B0E9B500501BA2 /* CancelButton.swift */; };
+		FD078F9E20B0ECB100501BA2 /* AddCalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD078F9D20B0ECB100501BA2 /* AddCalView.swift */; };
 		FD125D7D209F735F00A84D8F /* RegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD125D7C209F735F00A84D8F /* RegVC.swift */; };
 		FD125D7F209FA14900A84D8F /* Lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD125D7E209FA14900A84D8F /* Lib.swift */; };
 		FD141AAD20ADB33E003E39F3 /* AddPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD141AAC20ADB33E003E39F3 /* AddPersonVC.swift */; };
@@ -72,6 +74,8 @@
 		FD078F9320B09AA400501BA2 /* CalTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalTableCellView.swift; sourceTree = "<group>"; };
 		FD078F9720B0AAA700501BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD078F9920B0C30600501BA2 /* NavAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAuthVC.swift; sourceTree = "<group>"; };
+		FD078F9B20B0E9B500501BA2 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		FD078F9D20B0ECB100501BA2 /* AddCalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalView.swift; sourceTree = "<group>"; };
 		FD125D7C209F735F00A84D8F /* RegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegVC.swift; sourceTree = "<group>"; };
 		FD125D7E209FA14900A84D8F /* Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lib.swift; sourceTree = "<group>"; };
 		FD141AAC20ADB33E003E39F3 /* AddPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonVC.swift; sourceTree = "<group>"; };
@@ -197,7 +201,9 @@
 				FD1DD6EB20AF55FA00911A9C /* UserCalCell.swift */,
 				FD2920DB20B0429D007A50B2 /* RadiusTF.swift */,
 				FD2920DD20B053B1007A50B2 /* RadiusButton.swift */,
+				FD078F9B20B0E9B500501BA2 /* CancelButton.swift */,
 				FD078F9320B09AA400501BA2 /* CalTableCellView.swift */,
+				FD078F9D20B0ECB100501BA2 /* AddCalView.swift */,
 			);
 			path = elements;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				FDF1CE09209E60AF00956713 /* AuthVC.swift in Sources */,
 				FD7BB2AB20A6140E007F1C99 /* CallTableCell.swift in Sources */,
 				FD125D7F209FA14900A84D8F /* Lib.swift in Sources */,
+				FD078F9C20B0E9B500501BA2 /* CancelButton.swift in Sources */,
 				FDDFE80520AC68F00020DBB9 /* Extentions.swift in Sources */,
 				FDDFE7FE20AA05740020DBB9 /* SearchVC.swift in Sources */,
 				FDF1CE07209E60AF00956713 /* AppDelegate.swift in Sources */,
@@ -492,6 +499,7 @@
 				FD2920DE20B053B1007A50B2 /* RadiusButton.swift in Sources */,
 				FD141AAF20AE0AF8003E39F3 /* RequestsVC.swift in Sources */,
 				FD141AB120AE0B5F003E39F3 /* ReqCell.swift in Sources */,
+				FD078F9E20B0ECB100501BA2 /* AddCalView.swift in Sources */,
 				FD7BB2A520A4BD5A007F1C99 /* CalVC.swift in Sources */,
 				FD7BB2B420A8A04E007F1C99 /* AddEventVC.swift in Sources */,
 				FD078F9220B08D6000501BA2 /* SettingsVC.swift in Sources */,

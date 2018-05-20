@@ -16,7 +16,7 @@ class RadiusButton: UIButton {
         layer.masksToBounds = false
         layer.shadowColor = UIColor.red.cgColor
         layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowOffset = CGSize(width: 0, height: 1)
         layer.shadowRadius = 3
     }
 

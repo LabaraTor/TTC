@@ -14,6 +14,7 @@ class TTCalendar: NSObject{
     var startDate: String?
     var endDate: String?
     var close: String?
+    var descr: String?
     
     init(name: String, startDate: String, endDate: String, close: String) {
         self.name = name

@@ -44,18 +44,31 @@ class AuthVC: UIViewController {
     }
 
     @IBAction func SignIn(_ sender: Any) {
-        Auth.auth().signIn(withEmail: LogTF.text!, password: PasTF.text!) { (user, error) in
-            if let user = user {
-                let alert = UIAlertController(title: "Sign In", message: "\(user.uid)", preferredStyle: UIAlertControllerStyle.alert)
-                let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
+        if(LogTF.text != "" && PasTF.text != ""){
+            Auth.auth().signIn(withEmail: LogTF.text!, password: PasTF.text!) { (user, error) in
+                if let user = user {
+                    let alert = UIAlertController(title: "Sign In", message: "\(user.uid)", preferredStyle: UIAlertControllerStyle.alert)
+                    let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                }
+                if let error = error {
+                    self.present(Lib.showError(error: error), animated: true, completion: nil)
+                }
             }
-            if let error = error {
-                self.present(Lib.showError(error: error), animated: true, completion: nil)
-            }
+        }else{
+            let alert = UIAlertController(title: "Error", message: "Fill in all the fields", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "AuthToReg"){
+            let regVC = segue.destination as! RegVC
+            regVC.mainVC = self.mainVC
+        }
+    }
 }
 
