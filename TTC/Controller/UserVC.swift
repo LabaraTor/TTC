@@ -24,6 +24,11 @@ class UserVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         fetchCalendars()
         tableView.delegate = self
         tableView.dataSource = self
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = false
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func didReceiveMemoryWarning() {

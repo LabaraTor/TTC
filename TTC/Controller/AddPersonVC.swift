@@ -23,6 +23,12 @@ class AddPersonVC: UIInputViewController, UITableViewDelegate, UITableViewDataSo
         fetchUsers()
         tableView.delegate = self
         tableView.dataSource = self
+        let sc = UISearchController(searchResultsController: nil)
+        if #available(iOS 11.0, *) {
+            self.navigationItem.searchController = sc
+        } else {
+            // Fallback on earlier versions
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,4 +72,5 @@ class AddPersonVC: UIInputViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = list[indexPath.row]
         AddPersonVC.selUser = user
+        self.dismiss(animated: true, completion: nil)
     }}

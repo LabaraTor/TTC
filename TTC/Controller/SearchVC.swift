@@ -27,6 +27,16 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if #available(iOS 11.0, *) {
+            let sc = UISearchController(searchResultsController: nil)
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+            self.navigationItem.searchController = sc
+        } else {
+            // Fallback on earlier versions
+        }
+    }
+    
     func fetchUsers() {
         Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject]{
@@ -62,5 +72,6 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UserVC.user = list[indexPath.row]
         performSegue(withIdentifier: "searchToUser", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
