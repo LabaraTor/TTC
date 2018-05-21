@@ -26,7 +26,7 @@ class UserCalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UIT
         tableView.dataSource = self
         calendar.delegate = self
         calendar.dataSource = self
-        fetchEvents()
+//        fetchEvents()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,31 +48,31 @@ class UserCalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UIT
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         UserCalVC.selectedDate = date
-        fetchEvents()
+//        fetchEvents()
     }
-    
-    func fetchEvents(){
-        list = []
-        Database.database().reference().child("events").child((UserVC.user.uid)!).child(UserCalVC.curCal.name!).child(self.formatter1.string(from: UserCalVC.selectedDate)).observe(.childAdded) { (snapshot) in
-            print(snapshot)
-            
-            if let dictionary = snapshot.value as? [String: AnyObject]{
-                print(dictionary)
-                let event = Event()
-                event.title = dictionary["title"] as? String
-                event.startTime = dictionary["startTime"] as? String
-                event.endTime = dictionary["endTime"] as? String
-                event.descr = dictionary["descr"] as? String
-                if dictionary["with"] as? String != nil{
-                    event.with = dictionary["with"] as? String
-                }
-                DispatchQueue.main.async(execute: {
-                    self.tableView.reloadData()
-                })
-                self.list.append(event)
-            }
-        }
-    }
+    // сделать prepare для статически поле!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//    func fetchEvents(){
+//        list = []
+//        Database.database().reference().child("events").child((user.uid)!).child(UserCalVC.curCal.name!).child(self.formatter1.string(from: UserCalVC.selectedDate)).observe(.childAdded) { (snapshot) in
+//            print(snapshot)
+//
+//            if let dictionary = snapshot.value as? [String: AnyObject]{
+//                print(dictionary)
+//                let event = Event()
+//                event.title = dictionary["title"] as? String
+//                event.startTime = dictionary["startTime"] as? String
+//                event.endTime = dictionary["endTime"] as? String
+//                event.descr = dictionary["descr"] as? String
+//                if dictionary["with"] as? String != nil{
+//                    event.with = dictionary["with"] as? String
+//                }
+//                DispatchQueue.main.async(execute: {
+//                    self.tableView.reloadData()
+//                })
+//                self.list.append(event)
+//            }
+//        }
+//    }
     
     func maximumDate(for calendar: FSCalendar) -> Date {
         print(UserCalVC.curCal.endDate!)
@@ -105,5 +105,7 @@ class UserCalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UIT
         cell.textLabel?.text = list[indexPath.row].title
         return cell
     }
+    
+
 
 }

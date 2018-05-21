@@ -15,6 +15,7 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
     
     var list: Array<User> = Array()
+    var selUser = User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,8 +71,16 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UserVC.user = list[indexPath.row]
+        selUser = list[indexPath.row]
         performSegue(withIdentifier: "searchToUser", sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "searchToUser") {
+            let userVC = segue.destination as! UserVC
+            userVC.user = selUser
+        }
+    }
+    
 }

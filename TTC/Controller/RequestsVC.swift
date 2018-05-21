@@ -17,6 +17,8 @@ class RequestsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var list: Array<InputRequest> = Array()
     
+    var inpReq = InputRequest()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchRequests()
@@ -44,9 +46,6 @@ class RequestsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }, withCancel: nil)
         Database.database().reference().child("requests").child((Auth.auth().currentUser?.uid)!).child("input").observe(.childRemoved, with: { (snapshot) in
-            print("=====================")
-            print(snapshot)
-            print("=====================")
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let request = InputRequest()
                 request.title = dictionary["title"] as? String
@@ -79,14 +78,58 @@ class RequestsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ReqCell = self.tableView.dequeueReusableCell(withIdentifier: "reqCell") as! ReqCell!
-        cell.title.text = list[indexPath.row].title
+        let req = list[indexPath.row]
+        cell.title.text = req.title
+        cell.nickname.text = req.uid
+        cell.date.text = req.date
+        cell.descr.text = req.descr
+        cell.starttime.text = req.startTime
+        cell.endtime.text = req.endTime
+        
+        let uid = req.uid
+        Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                cell.nickname.text = dictionary["Nickname"] as? String
+                //set image
+                let url = URL(string: dictionary["ProfileImgURL"] as! String)
+                let request = URLRequest(url:url!)
+                URLSession.shared.dataTask(with: request) { (data, response, error) in
+                    if error != nil{
+                        self.present(Lib.showError(error: error!), animated: true, completion: nil)
+                    }
+                    
+                    DispatchQueue.main.async{
+                        if let image = UIImage(data: data!){
+                            cell.ProfileImage.image = image
+                        }
+                    }
+                    }.resume()
+            }
+        }, withCancel: nil)
+        
         cell.ButtonHandler = {()-> Void in
-            SelCalVC.inpReq = self.list[indexPath.row]
+            self.inpReq = self.list[indexPath.row]
+        }
+        cell.CancelButtonHandler = {()-> Void in
+            self.inpReq = self.list[indexPath.row]
+            self.delReq()
         }
         return cell
     }
     
+    func delReq(){
+        let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
+        ref.child("requests").child((Auth.auth().currentUser?.uid)!).child("input").child(inpReq.title!).setValue(nil)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 221
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "selReqCal") {
+            let scVC = segue.destination as! SelCalVC
+            scVC.inpReq = inpReq
+        }
     }
 }

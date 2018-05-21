@@ -14,6 +14,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet var tableView: UITableView!
     var list: Array<TTCalendar> = Array()
+    static var list: Array<TTCalendar> = Array()
 
     @IBOutlet weak var Nickname: UILabel!
     @IBOutlet weak var ProfileImage: UIImageView!
@@ -99,6 +100,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 self.list.append(calendar)
                 DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
+                    MainVC.list = self.list
                 })
             }
         }
