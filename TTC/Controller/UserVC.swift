@@ -89,9 +89,16 @@ class UserVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        UserCalVC.curCal = list[indexPath.row]
         performSegue(withIdentifier: "UserTableToCal", sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "UserTableToCal") {
+            let calVC = segue.destination as! UserCalVC
+            calVC.curCal = list[(self.tableView.indexPathForSelectedRow?.row)!]
+            calVC.user = self.user
+        }
     }
     
 }

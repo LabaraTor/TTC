@@ -23,12 +23,6 @@ class AddPersonVC: UIInputViewController, UITableViewDelegate, UITableViewDataSo
         fetchUsers()
         tableView.delegate = self
         tableView.dataSource = self
-        let sc = UISearchController(searchResultsController: nil)
-        if #available(iOS 11.0, *) {
-            self.navigationItem.searchController = sc
-        } else {
-            // Fallback on earlier versions
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +30,7 @@ class AddPersonVC: UIInputViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     @IBAction func cancel(_ sender: Any) {
+        AddPersonVC.selUser = User()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -46,7 +41,9 @@ class AddPersonVC: UIInputViewController, UITableViewDelegate, UITableViewDataSo
                 user.Nickname = dictionary["Nickname"] as? String
                 user.ProfileImgURL = dictionary["ProfileImgURL"] as? String
                 user.uid = snapshot.key
-                self.list.append(user)
+                if user.uid != Auth.auth().currentUser?.uid {
+                    self.list.append(user)
+                }
                 self.tableView.reloadData()
             }
         }, withCancel: nil)

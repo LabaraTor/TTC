@@ -570,7 +570,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.47282"
+            timestampString = "548731373.004666"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "85"
@@ -586,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.472967"
+            timestampString = "548731373.005546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -602,11 +602,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.4730721"
+            timestampString = "548731373.00565"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
             <Locations>
@@ -650,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.4731539"
+            timestampString = "548731373.0057679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -666,11 +666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.4732341"
+            timestampString = "548731373.005892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "tableView(_:commit:forRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -730,7 +730,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.473412"
+            timestampString = "548731373.006134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
@@ -746,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.473536"
+            timestampString = "548731373.006575"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "fetchUsers()"
             landmarkType = "7">
             <Locations>
@@ -794,11 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.473612"
+            timestampString = "548731373.006863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "fetchUsers()"
             landmarkType = "7">
          </BreakpointContent>
@@ -810,23 +810,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.473678"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "fetchUsers()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.473743"
+            timestampString = "548731373.0069799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -842,7 +826,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.4738261"
+            timestampString = "548731373.007087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/SearchVC.swift"
+            timestampString = "548731373.007211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -858,7 +858,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.473892"
+            timestampString = "548731373.007298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -906,7 +906,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.473996"
+            timestampString = "548731373.00743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -922,7 +922,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.474079"
+            timestampString = "548731373.007516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -1018,13 +1018,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.474305"
+            timestampString = "548731373.007762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "SearchVC"
-            landmarkType = "3">
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1034,7 +1034,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.474373"
+            timestampString = "548731373.007846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -1050,7 +1050,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.4744461"
+            timestampString = "548731373.007919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -1066,7 +1066,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.474512"
+            timestampString = "548731373.0080121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -1082,7 +1082,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/SearchVC.swift"
-            timestampString = "548561951.474577"
+            timestampString = "548731373.008096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
@@ -1130,11 +1130,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.474651"
+            timestampString = "548731373.008171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "fetchEvents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1146,7 +1146,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.474739"
+            timestampString = "548731373.008262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -1224,7 +1224,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.47482"
+            timestampString = "548731373.0083719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -1302,11 +1302,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.474897"
+            timestampString = "548731373.00846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1318,11 +1318,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.4749759"
+            timestampString = "548731373.0085599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1334,7 +1334,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.475065"
+            timestampString = "548731373.008649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -1350,11 +1350,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.475176"
+            timestampString = "548731373.008724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1366,11 +1366,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.475293"
+            timestampString = "548731373.008797"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1382,7 +1382,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserVC.swift"
-            timestampString = "548561951.47539"
+            timestampString = "548720315.456625"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -1398,7 +1398,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserVC.swift"
-            timestampString = "548561951.475466"
+            timestampString = "548720315.459079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -1414,11 +1414,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.475575"
+            timestampString = "548731373.008984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "calendar(_:didSelect:at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1430,11 +1430,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.475656"
+            timestampString = "548731373.009353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "maximumDate(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1446,11 +1446,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.475727"
+            timestampString = "548731373.0094711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "UserCalVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -1462,11 +1462,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.475813"
+            timestampString = "548731373.009591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "minimumDate(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1478,11 +1478,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.47588"
+            timestampString = "548731373.009734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "calendar(_:didSelect:at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1494,11 +1494,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.475951"
+            timestampString = "548731373.0098211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "CalVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -1510,11 +1510,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.476025"
+            timestampString = "548731373.009913"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "CalVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -1526,11 +1526,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.476091"
+            timestampString = "548731373.010018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "CalVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -1542,11 +1542,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.4761569"
+            timestampString = "548731373.010112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "maximumDate(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1558,27 +1558,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476225"
+            timestampString = "548731373.0102299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "maximumDate(for:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476321"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "minimumDate(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1590,11 +1574,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476393"
+            timestampString = "548731373.010354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "minimumDate(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1606,11 +1590,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476462"
+            timestampString = "548731373.01047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "maximumDate(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1622,11 +1606,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.47653"
+            timestampString = "548731373.01059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "calendar(_:didSelect:at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1638,11 +1622,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476599"
+            timestampString = "548731373.0106961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "formatter"
             landmarkType = "24">
             <Locations>
@@ -1701,11 +1685,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476669"
+            timestampString = "548731373.010803"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1717,11 +1701,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476737"
+            timestampString = "548731373.010937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1733,27 +1717,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476823"
+            timestampString = "548731373.011021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476892"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1765,11 +1733,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.476962"
+            timestampString = "548731373.011133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1781,11 +1749,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.477047"
+            timestampString = "548731373.0112751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "formatter"
             landmarkType = "24">
          </BreakpointContent>
@@ -1796,24 +1764,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/UserCalVC.swift"
-            timestampString = "548561951.4771169"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477205"
+            timestampString = "548731373.011418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -1829,7 +1781,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477294"
+            timestampString = "548731373.011507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/MainVC.swift"
+            timestampString = "548731373.011586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -1845,27 +1813,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477371"
+            timestampString = "548731373.0116709"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477465"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1877,11 +1829,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477544"
+            timestampString = "548731373.011764"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1893,11 +1845,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477621"
+            timestampString = "548731373.011843"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
             <Locations>
@@ -1941,11 +1893,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477697"
+            timestampString = "548731373.011946"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
             <Locations>
@@ -1989,11 +1941,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477793"
+            timestampString = "548731373.012035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2005,11 +1957,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.4778709"
+            timestampString = "548731373.012118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "fetchCalendars()"
             landmarkType = "7">
             <Locations>
@@ -2053,7 +2005,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.477967"
+            timestampString = "548731373.012203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -2101,7 +2053,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.4780509"
+            timestampString = "548731373.012298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -2117,7 +2069,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.478127"
+            timestampString = "548731373.012395"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -2133,7 +2085,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.478202"
+            timestampString = "548731373.0125051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -2149,7 +2101,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.478276"
+            timestampString = "548731373.012602"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -2197,7 +2149,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.47835"
+            timestampString = "548731373.012673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -2213,11 +2165,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.4784271"
+            timestampString = "548731373.0127749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -2261,11 +2213,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/CalVC.swift"
-            timestampString = "548561951.4785039"
+            timestampString = "548731373.0128469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2277,7 +2229,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.677937"
+            timestampString = "548706975.036212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -2355,7 +2307,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.684315"
+            timestampString = "548706975.040483"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -2433,7 +2385,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.685027"
+            timestampString = "548706975.040897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -2511,7 +2463,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.685732"
+            timestampString = "548706975.041256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -2589,105 +2541,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.686341"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "CallTableCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CallTableCell.locked.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
-                  timestampString = "548517987.56832"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "79">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CallTableCell.locked.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
-                  timestampString = "548517987.572992"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CallTableCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TTC.CallTableCell"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
-                  timestampString = "548517987.5768501"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "617">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTC.CallTableCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;TTC.CallTableCell&gt;"
-                  moduleName = "TTC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/elements/CallTableCell.swift"
-                  timestampString = "548517987.582339"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "507">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.686938"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "CallTableCell"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTC/elements/CallTableCell.swift"
-            timestampString = "548517856.6875221"
+            timestampString = "548706975.041568"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
+            landmarkName = "CallTableCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/elements/CallTableCell.swift"
+            timestampString = "548706975.041858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "CallTableCell"
             landmarkType = "3">
             <Locations>
@@ -2761,7 +2635,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.478772"
+            timestampString = "548731373.013133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -2777,7 +2651,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.478851"
+            timestampString = "548731373.013257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -2793,7 +2667,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.478932"
+            timestampString = "548731373.013358"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -2809,7 +2683,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.479051"
+            timestampString = "548731373.013461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -2825,7 +2699,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/Controller/MainVC.swift"
-            timestampString = "548561951.47914"
+            timestampString = "548731373.013586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -2841,7 +2715,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/popup/SelCalVC.swift"
-            timestampString = "548561951.479293"
+            timestampString = "548721175.314998"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -2857,7 +2731,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/popup/SelCalVC.swift"
-            timestampString = "548561951.47937"
+            timestampString = "548721175.315187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -2873,13 +2747,285 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTC/popup/SelCalVC.swift"
-            timestampString = "548561951.479439"
+            timestampString = "548721175.315309"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "newList()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/popup/AddEventVC.swift"
+            timestampString = "548731373.013801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "compare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/popup/AddEventVC.swift"
+            timestampString = "548731373.014165"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "compare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.014255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "calendar(_:didSelect:at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.01439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "fetchEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.0145479"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "fetchEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.014678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.014786"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.014887"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.015022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.015141"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.015268"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/Controller/UserCalVC.swift"
+            timestampString = "548731373.015386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "Add(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/popup/AddEventVC.swift"
+            timestampString = "548731373.015529"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "addEvent(newEvent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/popup/AddEventVC.swift"
+            timestampString = "548731373.0156389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "addEvent(newEvent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTC/popup/AddEventVC.swift"
+            timestampString = "548731373.015738"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "addEvent(newEvent:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.AddEventVC.addEvent(newEvent: TTC.Event) -&gt; ()"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/popup/AddEventVC.swift"
+                  timestampString = "548728193.514106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "5661">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTC.AddEventVC.addEvent(newEvent: TTC.Event) -&gt; ()"
+                  moduleName = "TTC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tornikedvalasvili/Desktop/TTC/TTC/popup/AddEventVC.swift"
+                  timestampString = "548728193.51906"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "12926">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

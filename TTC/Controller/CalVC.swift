@@ -101,6 +101,8 @@ class CalVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate, UITable
     
     func fetchEvents(){
         list = []
+        
+        Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(curCal.name!).child(self.formatter1.string(from: selectedDate)).removeAllObservers()
         Database.database().reference().child("events").child((Auth.auth().currentUser?.uid)!).child(curCal.name!).child(self.formatter1.string(from: selectedDate)).observe(.childAdded) { (snapshot) in
             print(snapshot)
             

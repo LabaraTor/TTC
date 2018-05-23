@@ -126,6 +126,10 @@ class RequestsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 221
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "selReqCal") {
             let scVC = segue.destination as! SelCalVC

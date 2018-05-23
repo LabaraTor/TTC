@@ -13,7 +13,6 @@ import FirebaseDatabase
 
 
 class Lib {
-    
     public static func showError(error: Error) -> UIAlertController
     {
         let alert = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: UIAlertControllerStyle.alert)
@@ -21,5 +20,4 @@ class Lib {
         alert.addAction(action)
         return alert
     }
-    
 }

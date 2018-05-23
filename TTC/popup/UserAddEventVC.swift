@@ -11,17 +11,18 @@ import TextFieldEffects
 import Firebase
 import FirebaseDatabase
 
-class AddEventVC: UIViewController {
-
+class UserAddEventVC: UIViewController {
+    
     @IBOutlet weak var titleTF: UITextField!
     @IBOutlet weak var descrTF: UITextField!
     @IBOutlet weak var startTimeTF: UITextField!
     @IBOutlet weak var endTimeTF: UITextField!
     
-    @IBOutlet weak var addPeople: UIButton!
-    
     var selectedDate: Date!
     var curCal: TTCalendar!
+    var user = User()
+    var event = Event()
+    var list: Array<Event> = Array()
     
     let picker = UIDatePicker()
     
@@ -38,44 +39,42 @@ class AddEventVC: UIViewController {
         createDatePicker()
         createDatePicker1()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "UserSelCal") {
+            let selVC = segue.destination as! UserSelCalVC
+            selVC.user = self.user
+            selVC.curCal = self.curCal
+            selVC.selectedDate = self.selectedDate
+            selVC.event = self.event
+            selVC.vc = self
+        }
+    }
+    
     @IBAction func cancel(_ sender: Any) {
-        AddPersonVC.selUser = User()
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func add(_ sender: Any) {
         let newEvent = Event(title: titleTF.text!, descr: descrTF.text!, startTime: startTimeTF.text!, endTime: endTimeTF.text!)
-        addEvent(newEvent: newEvent)
+        self.event = newEvent
+        addEvent()
     }
     
-    public func addEvent(newEvent: Event){
+    public func addEvent(){
         if(titleTF.text != "" && descrTF.text != "" && startTimeTF.text != "" && endTimeTF.text != ""){
             if compare(){
-                let values = ["title":newEvent.title, "descr":newEvent.descr, "startTime":newEvent.startTime, "endTime":newEvent.endTime, "with":AddPersonVC.selUser?.uid] as [String : AnyObject]
-                if AddPersonVC.selUser?.uid != nil{
-                    let valuesReq = ["title":newEvent.title, "descr":newEvent.descr, "date":self.formatter.string(from: selectedDate), "startTime":newEvent.startTime, "endTime":newEvent.endTime, "uid":Auth.auth().currentUser?.uid] as [String : AnyObject]
-                    let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
-                    let reqReference = ref.child("requests").child((AddPersonVC.selUser?.uid)!).child("input").child(newEvent.title!)
-                    reqReference.updateChildValues(valuesReq) { (error, ref) in
-                        if error != nil{
-                            self.present(Lib.showError(error: error!), animated: true, completion: nil)
-                        }
-//                        self.dismiss(animated: true, completion: nil)
-                    }
-                }
-                let ref = Database.database().reference(fromURL: "https://ttc0-f65c7.firebaseio.com/")
-                let calsReference = ref.child("events").child((Auth.auth().currentUser?.uid)!).child(curCal.name!).child(self.formatter.string(from: selectedDate)).child(newEvent.title!)
-                calsReference.updateChildValues(values) { (error, ref) in
-                    if error != nil{
-                        self.present(Lib.showError(error: error!), animated: true, completion: nil)
-                    }
-                    AddPersonVC.selUser = User()
-                    self.dismiss(animated: true, completion: nil)
+                if checkTime(){
+                    performSegue(withIdentifier: "UserSelCal", sender: nil)
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "An event is already set for this time", preferredStyle: UIAlertControllerStyle.alert)
+                    let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
                 }
             } else {
                 let alert = UIAlertController(title: "Error", message: "The end time must be later than the start time", preferredStyle: UIAlertControllerStyle.alert)
@@ -91,10 +90,38 @@ class AddEventVC: UIViewController {
         }
     }
     
+    func checkTime()->Bool{
+        for event in list{
+            if ((toMin(str: event.startTime!) <= toMin(str: startTimeTF.text!))&&(toMin(str: event.endTime!) >= toMin(str: startTimeTF.text!))){
+                return false
+            }
+            if ((toMin(str: event.startTime!) <= toMin(str: endTimeTF.text!))&&(toMin(str: event.endTime!) >= toMin(str: endTimeTF.text!))) {
+                return false
+            }
+            if ((toMin(str: startTimeTF.text!) <= toMin(str: event.startTime!))&&(toMin(str: endTimeTF.text!) >= toMin(str: event.startTime!))){
+                return false
+            }
+            if ((toMin(str: startTimeTF.text!) <= toMin(str: event.endTime!))&&(toMin(str: endTimeTF.text!) >= toMin(str: event.endTime!))) {
+                return false
+            }
+        }
+        return true
+    }
+    
+    func toMin(str: String)-> Int{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+        let time = formatter.date(from: str)
+        formatter.dateFormat = "hh:mm"
+        let start = formatter.string(from: time!)
+        let s = start.components(separatedBy: ":")
+        let Min = Int(s[0])!*60 + Int(s[1])!
+        return Min
+    }
+    
     func compare() -> Bool{
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
-        print(startTimeTF.text!)
         let stime = formatter.date(from: startTimeTF.text!)
         let etime = formatter.date(from: endTimeTF.text!)
         formatter.dateFormat = "hh:mm"
@@ -161,3 +188,4 @@ class AddEventVC: UIViewController {
         self.view.endEditing(true)
     }
 }
+

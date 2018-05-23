@@ -25,19 +25,26 @@ class AddCalVC: UIViewController {
     
     @IBAction func Add(_ sender: Any) {
         if(calName.text != "" && startField.text != "" && endField.text != "" && descrField.text != ""){
-            if(compare()){
-                var close: String
-                if switcher.isOn{
-                    close =  "true"
+            if (checkName()){
+                if(compare()){
+                    var close: String
+                    if switcher.isOn{
+                        close =  "true"
+                    } else {
+                        close = "false"
+                    }
+                    let newCal = TTCalendar(name: calName.text!, startDate: startField.text!, endDate: endField.text!, close: close)
+                    newCal.descr = descrField.text!
+                    addCal(newCal: newCal)
+                    self.dismiss(animated: true, completion: nil)
                 } else {
-                    close = "false"
+                    let alert = UIAlertController(title: "Error", message: "The end date must be later than the start date", preferredStyle: UIAlertControllerStyle.alert)
+                    let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
                 }
-                let newCal = TTCalendar(name: calName.text!, startDate: startField.text!, endDate: endField.text!, close: close)
-                newCal.descr = descrField.text!
-                addCal(newCal: newCal)
-                self.dismiss(animated: true, completion: nil)
             } else {
-                let alert = UIAlertController(title: "Error", message: "The end date must be later than the start date", preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: "Error", message: "Сalendar with the same name already exists", preferredStyle: UIAlertControllerStyle.alert)
                 let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)
@@ -48,6 +55,15 @@ class AddCalVC: UIViewController {
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    func checkName()->Bool{
+        for cal in MainVC.list {
+            if cal.name == calName.text{
+                return false
+            }
+        }
+        return true
     }
     
     func compare() -> Bool{

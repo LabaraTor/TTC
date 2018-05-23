@@ -30,9 +30,7 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidAppear(_ animated: Bool) {
         if #available(iOS 11.0, *) {
-            let sc = UISearchController(searchResultsController: nil)
             self.navigationController?.navigationBar.prefersLargeTitles = true
-            self.navigationItem.searchController = sc
         } else {
             // Fallback on earlier versions
         }
@@ -45,7 +43,9 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 user.uid = snapshot.key
                 user.Nickname = dictionary["Nickname"] as? String
                 user.ProfileImgURL = dictionary["ProfileImgURL"] as? String
-                self.list.append(user)
+                if user.uid != Auth.auth().currentUser?.uid {
+                    self.list.append(user)
+                }
                 self.tableView.reloadData()
             }
         }, withCancel: nil)

@@ -13,9 +13,4 @@ class User: NSObject{
     var uid: String?
     var Nickname: String?
     var ProfileImgURL: String?
-//
-//    init(nickName:String, profileImg:String) {
-//        self.nickName = nickName
-//        self.profileImg = profileImg
-//    }
 }

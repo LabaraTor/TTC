@@ -89,6 +89,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 self.tableView.reloadData()
             }
         }
+        Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).removeAllObservers()
         Database.database().reference().child("calendars").child((Auth.auth().currentUser?.uid)!).observe(.childAdded) { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject]{
                 let calendar = TTCalendar()
